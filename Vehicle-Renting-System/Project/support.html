@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Support | Ride Place</title>
+        <link rel="stylesheet" href="css/style.css"> <!--main css-->
+        <link rel="stylesheet" href="css/style6.css"> <!--Our partner, news letter and blog card -->
+        <link rel="stylesheet" href="css/offer.css"> <!-- Offer section -->
+        <link rel="stylesheet" href="css/support.css"> <!--Support CSS-->
+        <!--Lnr icon-->
+        <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
+
+        <style>
+
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .navbar{
+            background-color: #132833;
+            font-family: "Open Sans", sans-serif;
+        }
+
+        .navbar .nav_cent{
+            width: 90%;
+            margin: 0px auto;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            display: flex;
+        }
+
+        .navbar .nav_cent .logo{
+            width: 50%;
+        }
+
+        .navbar .nav_cent .menu{
+            background-color: transparent;
+            width: 50%;
+        }
+
+        .navbar .nav_cent .menu a{
+            float: right;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 5px 20px;
+            text-decoration: none;
+            font-family: "Raleway", sans-serif;
+        }
+
+        .navbar .nav_cent .menu a.active{
+            background-color: #00D231;
+            border-radius: 3px;
+        }
+
+        </style>
+    </head>
+    <body background="sback.png">
+    
+
+
+    <!--Nav bar-->
+    <div class="navbar">
+        <div class="nav_cent">
+            <div class="logo">
+                <img src="img/logo.png">
+            </div>
+            <div class="menu">
+                <a href="account.html">Account</a>
+                <a href="support.html">Contact</a>
+                <a href="offer.html">Offers</a>
+                <a href="vehicle.html">vehicles</a>
+                <a href="ourservice.html">Service</a>
+                <a href="aboutus.html">About</a>
+                <a class="active" href="index.html">Home</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="maintext">
+        <h1 style="padding-bottom: 20px;">Support Center</h1>
+        <p>If you want, change or cancel your reservation, do this by filling out the form.</p>
+    </div>
+
+    <!-- FORM -->
+    <div class="formbox">
+        <div class="head">
+            <h2 style="text-align:center; padding-bottom:20px;padding-top:20px;">Change or Cancel</h2>
+        </div>
+        <form name="myForm" action="#">
+          <label for="email">Email Address</label>
+          <input type="text" id="email" name="email" placeholder="email@gmail.com">
+      
+          <label for="reservation">Reservation Number</label>
+          <input type="text" id="res" name="res" placeholder="R50698">
+      
+          <label for="reason">Reason</label>
+          <select id="reason" name="reason">
+            <option value="cancel">Cancel</option>
+            <option value="change">Change</option>
+          </select>
+      
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Write something.." style="height:200px" ></textarea>
+      
+          <input type="button" value="Submit" id="btn" onclick="validateForm()">
+        </form>
+      </div>
+
+      <!--MSG BOX-->
+
+      <div id="msgbox" class="modal" style="display: none; width: 450px;height: 150px; box-shadow: 0 4px 15px rgb(0 210 49 / 90%);">
+        <div class="b-cent" style="display:flex; padding: 30px 30px 30px 30px;">
+            <div class="svg-container" style="width: 30%;">    
+                <svg class="ft-green-tick" xmlns="http://www.w3.org/2000/svg" height="75" width="75" viewBox="0 0 48 48" aria-hidden="true">
+                    <circle class="circle" fill="#00D231" cx="24" cy="24" r="22"/>
+                    <path class="tick" fill="none" stroke="#FFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M14 27l5.917 4.917L34 17"/>
+                </svg>
+            </div>
+            <div class="mtext" style="width: 70%; padding-top: 10px;">
+                <h2>Successfull</h2>
+                <p>Thanks for contacting us</p>
+                <input type="image" src="cl.png" class="close" style="float: right;">
+            </div>
+        </div>
+      </div>
+
+
+      <!--Form POP UP-->
+
+      <script>
+
+        function validateForm() {
+        let x = document.forms["myForm"]["email"].value;
+        if (x == "") {
+            alert("Email must be filled out!");
+            return false;
+        }else{
+            pop();
+        }
+        }
+
+
+        function pop(){
+        
+        var modal = document.getElementById("msgbox");
+        var btn = document.getElementById("btn");
+        var span = document.getElementsByClassName("close")[0]; 
+        
+        btn.onclick = function() {
+          modal.style.display = "block";
+        }
+        
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+
+        }
+        
+     </script>
+        
+
+    <!--News letter-->
+    <form action="newsletter.php" method="post">
+        <div class="s_main">
+            <div class="cent">
+                <h2>Let's keep in touch</h2>
+                <p>Subscribe to keep up with fresh news and exciting updates. We promise not to spam you!</p>
+                <div class="form">
+                    <input type="email" class="formemail" placeholder="Enter your email address" name="email"/>
+                    <button type="submit" class="formbutton">Send</button>
+                </div>
+                <div class="notice">
+                    <input type="checkbox" required>
+                    <span>I agree to my email address being stored and uses to recieve monthly newsletter.</span>
+                </div>
+            </div>
+        </div>
+        </form>
+        <!--Footer-->
+        <div class="footer_main">
+            <div class="footer_tabs">
+                <div class="fabout">
+                    <h2>About us</h2>
+                    <img src="img/logo.png">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis harum sint vero delectus culpa! Debitis necessitatibus veniam, facilis enim illum architecto dolorem et, incidunt, non labore laborum aut sint! Iure.</p>
+                    <ul>
+                        <a href="">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-instagram"></i>
+                        </a>    
+                    </ul>
+                </div>
+                <div class="fquicklink">
+                    <h2>Quick Links</h2>
+                    <div class="main_list">
+                    <div class="list_i">
+                        <ul>
+                            <a href="aboutus.html">About Us<li></li></a>
+                            <a href="account.html">Account<li></li></a>
+                            <a href="support.html">Support<li></li></a>
+                            <a href="bookup.html">View Booking<li></li></a>
+                            <a href="offer.html">Offers<li></li></a>
+                            <a href="vehicle.html">Vehicles<li></li></a>
+                        </ul>
+                    </div>
+                    <div class="list_ii">
+                        <ul>
+                            <a href="login.html">Sign In<li></li></a>
+                            <a href="signup.html">Sign Up<li></li></a>
+                            <a href="offer.html">Offers<li></li></a>
+                            <a href="#">Get a Receipt<li></li></a>
+                            <a href="#">Community<li></li></a>
+                        </ul>                    
+                    </div>
+                    </div>
+                </div>
+                <div class="fcontact">
+                    <h2>Contact Us</h2>
+                    <div class="mail">
+                        <svg class="lnr lnr-phone-handset"><use xlink:href="#lnr-phone-handset"></use></svg>
+                        <p>(123)-456-7890<br>(123)-456-7890</p>
+                    </div>
+                    <div class="phone">
+                        <svg class="lnr lnr-envelope"><use xlink:href="#lnr-envelope"></use></svg>
+                        <p>info@rideplace.com<br>support@rideplace.com</p>
+                    </div>
+                    <div class="location">
+                        <svg class="lnr lnr-map-marker"><use xlink:href="#lnr-map-marker"></use></svg>
+                        <p>123 Negambo Road<br>Kurunegala - Sri Lanka</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <footer>
+                <div class="fpara">
+                <p>Copyright © RentNow 2022. All rights reserved.</p>
+                </div>
+                <div class="fpay">
+                    <p><i>We Accept</i></p>
+                    <img src="img/payments.png">
+                </div>
+            </footer>
+            <hr>
+        </div>
+
+    </body>
+</html>

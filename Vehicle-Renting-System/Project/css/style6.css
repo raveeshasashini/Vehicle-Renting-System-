@@ -1,0 +1,232 @@
+/* Our Partners */
+
+.p_main{
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.p_main .p_head{
+    padding-bottom: 30px;
+}
+
+.p_main .p_head h2{
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-size: 31px;
+    color: black;
+}
+
+.p_main .p_head .ourbig{
+    display: block;
+    width: 68%;
+    font-weight: 800;
+    font-size: 50px;
+    font-size: 4.28571rem;
+    line-height: 1;
+    letter-spacing: -3px;
+    position: absolute;
+    text-align: center;
+    z-index: -1;
+    color: rgba(211, 220, 225, 0.4);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-85%)
+}
+
+.p_main .partner{
+    display: flex;
+    padding: 50px 24px 80px;
+    background-color: #F7FFF6;
+    border-radius: 10px;
+}
+
+.p_main .partner .brand{
+    width: 20%;
+    align-items: center;
+}
+
+.p_main .partner .brand img{
+
+}
+
+
+/* Article */
+
+.b_head{
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 90px;
+    padding-bottom: 30px;
+}
+
+.b_head h2{
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-size: 31px;
+    color: black;
+}
+
+.b_head .bbig{
+    display: block;
+    width: 68%;
+    font-weight: 800;
+    font-size: 50px;
+    font-size: 4.28571rem;
+    line-height: 1;
+    letter-spacing: -3px;
+    position: absolute;
+    text-align: center;
+    z-index: -1;
+    color: rgba(211, 220, 225, 0.4);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-85%)
+}
+
+.b_article{
+    display: flex;
+    padding: 80px;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.b_article .square{
+    width: 420px;
+	height: 400px;
+	background: white;
+    border-radius: 4px;
+    box-shadow: 0px 20px 50px #D9DBDF;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    margin-left: 10px; 
+}
+
+.b_article .square .mask{
+    clip: rect(0px, 460px, 220px, 0px);
+    border-radius: 4px;
+    position: absolute;
+}
+
+.b_article .square img{
+    width: 420px;
+}
+
+.b_article .square .h1{
+    margin: auto;
+    text-align: left;
+    margin-top: 240px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    font-family: "Raleway", sans-serif;
+    font-size: 24px;
+  }
+
+.b_article .square p{
+   text-align: justify; 
+   padding-left: 30px;
+   padding-right: 30px;
+   font-family: 'Open Sans', sans-serif;
+   font-size: 12px;
+   color: #C8C8C8;
+   line-height: 18px;
+  }
+
+.b_article .square .button {
+    background-color: #00D231;
+    color: white;
+    width: 90px;
+    padding: 10px 18px;
+    border-radius: 3px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 70px;
+    font-size: 12px;
+    cursor: pointer;
+    font-family: 'merriweather';
+  }
+
+
+  /* News letter */
+  @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap');
+
+.s_main{
+    background: rgb(17,46,59,0.98);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Mulish', sans-serif;
+}
+
+.s_main .cent {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 945px;
+	height: 374px;
+}
+
+
+.s_main .cent h2 {
+	font-weight: bold;
+	font-size: 26px;
+	margin-bottom: 18px;
+    color: #fff;
+}
+
+.s_main .cent p {
+	max-width: 450px;
+	text-align: center;
+	margin-bottom: 53px;
+	line-height: 1.5;
+    color: #fff;
+}
+
+.s_main .cent .form {
+	margin-bottom: 25px;
+}
+
+.s_main .cent .formemail {
+	padding: 20px 25px;
+	border-radius: 5px;
+ 	border: 1px solid #CAD3DB;
+	width: 431px;
+	font-size: 18px;
+	color: #0F121F;
+}
+
+.s_main .cent .formemail:focus {
+	outline: 1px solid #00D231;
+}
+
+.s_main .cent .formbutton {
+	background: #00D231;
+	padding: 10px;
+	border: none;
+	width: 244px;
+	height: 65px;
+	border-radius: 5px;
+	font-size: 18px;
+	color: white;
+	box-shadow: 0 4px 20px rgba(0,210,49,0.7);
+}
+
+.s_main .cent .formbutton:hover {
+	box-shadow: 0 10px 20px rgba(0,210,49,0.7);
+}
+
+.s_main .cent .notice {
+	width: 345px;
+}

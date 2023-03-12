@@ -1,0 +1,384 @@
+<!DOCTYPE html>    
+    <html>    
+    <head>    
+        <title>Sign up Form | Ride Place</title>    
+
+    <link rel="stylesheet" href="css/style.css"> <!--main css-->
+    <link rel="stylesheet" href="css/style6.css"> <!--Our partner, news letter and blog card -->
+    <link rel="stylesheet" href="css/offer.css"> <!-- Offer section -->
+    <!--Lnr icon-->
+    <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
+
+		<style>
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar{
+    background-color: #132833;
+    font-family: "Open Sans", sans-serif;
+}
+
+.navbar .nav_cent{
+    width: 90%;
+    margin: 0px auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+}
+
+.navbar .nav_cent .logo{
+    width: 50%;
+}
+
+.navbar .nav_cent .menu{
+    background-color: transparent;
+    width: 50%;
+}
+
+.navbar .nav_cent .menu a{
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 5px 20px;
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+}
+
+.navbar .nav_cent .menu a.active{
+    background-color: #00D231;
+    border-radius: 3px;
+}
+
+body{  
+        margin: 0;  
+        padding: 0;  
+        background-color:white;  
+        font-family: 'Arial';  
+    }  
+    .signup{  
+            width: 382px;  
+            /*overflow: hidden;*/  
+            margin: auto;  
+            margin: 20 0 0 450px;  
+            padding: 80px;  
+            background: rgb(0,210,49,0.6);
+            border-radius: 15px ;  
+            bottom:20px;  
+
+			height:400px;
+    } 
+	
+    #tx{  
+        text-align: center;  
+        color: black;  
+        padding: 20px;  
+        margin-top: 50px;
+    }  
+    label{  
+        color: black;  
+        font-size: 17px;  
+    }  
+    #Fname{  
+        width: 370px;  
+        height: 30px;  
+        border: none;  
+        border-radius: 3px;  
+        padding-left: 8px;  
+    } 
+		
+	 #Lname{  
+        width: 370px;  
+        height: 30px;  
+        border: none;  
+        border-radius: 3px;  
+        padding-left: 8px;  
+    } 
+	
+	#mail{  
+        width: 370px;  
+        height: 30px;  
+        border: none;  
+        border-radius: 3px;  
+        padding-left: 8px;  
+    } 
+	
+    #cpsw{  
+        width: 370px;  
+        height: 30px;  
+        border: none;  
+        border-radius: 3px;  
+        padding-left: 8px;  
+          
+    }  
+	
+	 #psw{  
+        width: 370px;  
+        height: 30px;  
+        border: none;  
+        border-radius: 3px;  
+        padding-left: 8px;  
+          
+    }
+    #sign{  
+        width: 380px;  
+        height: 30px;  
+        border: none;  
+        border-radius: 3px;  
+        padding-left: 8px;  
+        color: blue;  
+      
+      
+    }  
+    span{  
+        color: white;  
+        font-size: 17px;  
+    }
+
+#sign:hover {
+  background-color:black;
+  color: white;
+}
+
+#message {
+  display:none;
+  background: none;
+  color: #000;
+  position: absolute;
+  padding: 80px;
+  margin-top: 10px;
+  bottom:20px;
+}
+
+#message p {
+  padding: 10px 35px;
+  font-size: 18px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "✔";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "✖";
+}
+
+    </style>
+
+
+    </head>    
+    <body background="lback.png">    
+  
+    <!--Nav bar-->
+    <div class="navbar">
+      <div class="nav_cent">
+          <div class="logo">
+              <img src="img/logo.png">
+          </div>
+          <div class="menu" class="navi">
+            <a href="account.html">Account</a>
+            <a href="support.html">Contact</a>
+            <a href="offer.html">Offers</a>
+            <a href="vehicle.html">vehicles</a>
+            <a href="ourservice.html">Service</a>
+            <a href="aboutus.html">About</a>
+            <a class="active" href="index.html">Home</a>
+          </div>
+      </div>
+    </div>
+
+
+		<h2 id="tx">Sign Up</h2><br>
+        <div class="signup" style="margin-bottom: 70px;">   
+
+        <form id="signup" method="get" action="login.php" name="signupForm" style="font-family: Raleway, sans-serif;">    
+            <label><b>Frist Name     
+            </b>    
+            </label>    
+            <input type="text" name="Fname" id="Fname" placeholder="Fristname">    
+            <br><br> 
+			 <label><b>Last Name     
+            </b>    
+            </label>    
+            <input type="text" name="Lname" id="Lname" placeholder="Lastname">    
+            <br><br>
+			 <label><b>E-mail    
+            </b>    
+            </label> <br>   
+            <input type="text" name="mail" id="mail" placeholder="mailaddress">    
+            <br><br>  
+            <label for="psw"><b>Password</b></label>
+			<input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+            <br><br> 
+			<label for="psw"><b>Confirm Password</b></label>
+			<input type="password" id="cpsw" name="cpsw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>    
+            <br><br><br><br>  
+            <input type="button" name="sign" id="sign" value=" sign up " onclick="document.location='bookup.html'">       
+            <br><br>  
+			
+                
+        </form>     
+    </div>
+	
+	<div id="message">
+		<h3>Password must contain the following:</h3>
+		<p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+		<p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+		<p id="number" class="invalid">A <b>number</b></p>
+		<p id="length" class="invalid">Minimum <b>8 characters</b></p>
+	</div>
+	
+
+<script>
+var myInput = document.getElementById("psw");
+var letter = document.getElementById("letter");
+var capital = document.getElementById("capital");
+var number = document.getElementById("number");
+var length = document.getElementById("length");
+
+// When the user clicks on the password field, show the message box
+myInput.onfocus = function() {
+  document.getElementById("message").style.display = "block";
+}
+
+// When the user clicks outside of the password field, hide the message box
+myInput.onblur = function() {
+  document.getElementById("message").style.display = "none";
+}
+
+// When the user starts to type something inside the password field
+myInput.onkeyup = function() {
+  // Validate lowercase letters
+  var lowerCaseLetters = /[a-z]/g;
+  if(myInput.value.match(lowerCaseLetters)) {  
+    letter.classList.remove("invalid");
+    letter.classList.add("valid");
+  } else {
+    letter.classList.remove("valid");
+    letter.classList.add("invalid");
+  }
+  
+  // Validate capital letters
+  var upperCaseLetters = /[A-Z]/g;
+  if(myInput.value.match(upperCaseLetters)) {  
+    capital.classList.remove("invalid");
+    capital.classList.add("valid");
+  } else {
+    capital.classList.remove("valid");
+    capital.classList.add("invalid");
+  }
+
+  // Validate numbers
+  var numbers = /[0-9]/g;
+  if(myInput.value.match(numbers)) {  
+    number.classList.remove("invalid");
+    number.classList.add("valid");
+  } else {
+    number.classList.remove("valid");
+    number.classList.add("invalid");
+  }
+  
+  // Validate length
+  if(myInput.value.length >= 8) {
+    length.classList.remove("invalid");
+    length.classList.add("valid");
+  } else {
+    length.classList.remove("valid");
+    length.classList.add("invalid");
+  }
+}
+</script>
+
+<!--Footer-->
+<div class="footer_main">
+  <div class="footer_tabs">
+      <div class="fabout">
+          <h2>About us</h2>
+          <img src="img/logo.png">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis harum sint vero delectus culpa! Debitis necessitatibus veniam, facilis enim illum architecto dolorem et, incidunt, non labore laborum aut sint! Iure.</p>
+          <ul>
+              <a href="">
+                  <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="">
+                  <i class="fab fa-twitter"></i>
+              </a>
+              <a href="">
+                  <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="">
+                  <i class="fab fa-instagram"></i>
+              </a>    
+          </ul>
+      </div>
+      <div class="fquicklink">
+          <h2>Quick Links</h2>
+          <div class="main_list">
+          <div class="list_i">
+              <ul>
+                <a href="aboutus.html">About Us<li></li></a>
+                <a href="account.html">Account<li></li></a>
+                <a href="support.html">Support<li></li></a>
+                <a href="bookup.html">View Booking<li></li></a>
+                <a href="offer.html">Offers<li></li></a>
+                <a href="vehicle.html">Vehicles<li></li></a>
+            </ul>
+        </div>
+        <div class="list_ii">
+            <ul>
+                <a href="login.html">Sign In<li></li></a>
+                <a href="signup.html">Sign Up<li></li></a>
+                <a href="offer.html">Offers<li></li></a>
+                <a href="#">Get a Receipt<li></li></a>
+                <a href="#">Community<li></li></a>
+              </ul>                    
+          </div>
+          </div>
+      </div>
+      <div class="fcontact">
+          <h2>Contact Us</h2>
+          <div class="mail">
+              <svg class="lnr lnr-phone-handset"><use xlink:href="#lnr-phone-handset"></use></svg>
+              <p>(123)-456-7890<br>(123)-456-7890</p>
+          </div>
+          <div class="phone">
+              <svg class="lnr lnr-envelope"><use xlink:href="#lnr-envelope"></use></svg>
+              <p>info@rideplace.com<br>support@rideplace.com</p>
+          </div>
+          <div class="location">
+              <svg class="lnr lnr-map-marker"><use xlink:href="#lnr-map-marker"></use></svg>
+              <p>123 Negambo Road<br>Kurunegala - Sri Lanka</p>
+          </div>
+      </div>
+  </div>
+  <hr>
+  <footer>
+      <div class="fpara">
+      <p>Copyright © RentNow 2022. All rights reserved.</p>
+      </div>
+      <div class="fpay">
+          <p><i>We Accept</i></p>
+          <img src="img/payments.png">
+      </div>
+  </footer>
+  <hr>
+</div>
+
+</body>
+</html>

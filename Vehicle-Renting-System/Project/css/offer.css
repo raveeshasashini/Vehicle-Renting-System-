@@ -1,0 +1,87 @@
+.offbox{
+    width: 70%;
+    margin: auto;
+    font-family: Raleway, sans-serif;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.offbox img{
+    width: 250px;
+}
+
+.offbox .b1{
+    display: flex;
+}
+
+.offbox .b1 .bg-text{
+    width: 67%;
+    text-align: center;
+    background-color: white;
+    cursor: pointer;
+    padding-top: 150px;
+    font-family: 'Mulish', sans-serif;
+}
+
+.bg-text h1{
+    color: #fff;
+    text-shadow:
+      0 0 5px #fff,
+      0 0 10px #fff,
+      0 0 20px #fff,
+      0 0 40px rgb(238, 250, 72),
+      0 0 80px rgb(237, 240, 80),
+      0 0 90px rgb(245, 235, 144),
+      0 0 100px rgb(222, 245, 140),
+      0 0 150px rgb(231, 221, 130);
+  }
+
+.offbox .b2{
+    display: flex;
+}
+
+.b11{
+    width: 33.33%;
+}
+
+.b21{
+    width: 33.33%;
+}
+
+.offer{
+    border: 1px solid #212f3d;
+    border-radius: 20px;
+    margin: 40px;
+    text-align: center;
+    padding: 20px 10px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.offer .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 40px 10px 40px;
+    height: 45px;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 25px;
+    background-color: #00D231;
+    cursor: pointer;
+}
+
+.offer .button a {
+    text-decoration: none;
+    margin-left: 10px;
+    color: #fff;
+    border-radius: 25px;
+}
+
+.offer {
+    transition: 0.3s;
+  }
+  .offer:hover {
+    transform: translate(0, -10px);
+  }

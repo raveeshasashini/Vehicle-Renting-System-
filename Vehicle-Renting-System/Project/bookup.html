@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Book Vehicle | Ride  Place</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"> <!--main css-->
+    <!--Lnr icon-->
+    <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
+   <style>
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar{
+    background-color: #132833;
+    font-family: "Open Sans", sans-serif;
+}
+
+.navbar .nav_cent{
+    width: 90%;
+    margin: 0px auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+}
+
+.navbar .nav_cent .logo{
+    width: 50%;
+}
+
+.navbar .nav_cent .menu{
+    background-color: transparent;
+    width: 50%;
+}
+
+.navbar .nav_cent .menu a{
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 5px 20px;
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+}
+
+.navbar .nav_cent .menu a.active{
+    background-color: #00D231;
+    border-radius: 3px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root{
+  --font-light: #808080;
+  --primary-color: #FAED00;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  padding-top: 100px;
+  padding-bottom: 110px;
+  width: 70%;
+  margin: 0 auto;
+}
+.book {
+    box-shadow: 0px 5px 13px -3px rgba(0,0,0,0.75);
+    display: flex;
+    flex-wrap: wrap;
+}
+.description , .form{
+    width: 40%;
+    padding: 5%;
+}
+.description h1 {
+    text-transform: uppercase;
+    color: var(--font-light);
+    font-weight: 400;
+    margin-top: 0;
+}
+.description h1 strong{
+  font-weight: 700;
+  color: #000;
+}
+.description p {
+    color: var(--font-light);
+    font-size: 14px;
+    line-height: 22px;
+}
+.quote p {
+    font-style: italic;
+    padding: 2%;
+    border-left: 4px solid var(--primary-color);
+}
+.description ul {
+    padding-left: 16px;
+    list-style: circle;
+}
+.description ul li{
+    margin: 10px 0;
+}
+.form{
+  background: #00D231;
+}
+.form form{
+  color: var(--font-light);
+    display: flex;
+  flex-wrap: wrap;
+}
+.inpbox.full {
+    width: 100%;
+    background: #fff;
+    padding: 3%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.inpbox span::before {
+    margin-left: 0;
+}
+.inpbox span {
+    padding-right: 10px;
+    border-right: 2px solid var(--font-light);
+}
+.form select{
+    border: 0;
+    width: 90%;
+    color: var(--font-light);
+}
+form input {
+    border: 0;
+    width: 74%;
+    color: var(--font-light);
+    padding: 0 4%;
+}
+.form select:focus, form input {
+  outline: none;
+}
+.inpbox {
+    width: 42%;
+    background: #fff;
+    padding: 3%;
+    margin-bottom: 20px;
+    margin-right: 2%;
+}
+.inrbox{
+  width: 33%;
+  color: #000;
+}
+.inrbox span{
+  padding-right: 10px;
+  color: #000;
+}
+.inrbox span {
+    border: 0;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.form input[type="radio"] {
+    width: unset;
+}
+button.subt, button.rst{
+  padding: 2% 3%;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 0;
+}
+button.subt {
+    margin-right: 3%;
+    background: #fff;
+}
+button.rst {
+    background: #000;
+    color: #fff;
+}
+
+   </style>
+
+  </head>
+  <body background="booking.png">
+      
+      <!--Nav bar-->
+      <div class="navbar">
+          <div class="nav_cent">
+              <div class="logo">
+                  <img src="img/logo.png">
+              </div>
+              <div class="menu">
+                <a href="account.html">Account</a>
+                <a href="support.html">Contact</a>
+                <a href="offer.html">Offers</a>
+                <a href="vehicle.html">vehicles</a>
+                <a href="ourservice.html">Service</a>
+                <a href="aboutus.html">About</a>
+                <a class="active" href="index.html">Home</a>
+              </div>
+          </div>
+      </div>
+    
+    <div class="container">
+      <div class="book">
+        <div class="description">
+          <h1><strong>Book your Ride</strong> </h1>
+          <p>
+            With over 30 years of experience in the industry, we strive to offer the highest levels of customer service and a highly personalised service to all our customers.
+          </p>
+          <div class="quote">
+            <p>
+              We take pride in being able to offer the highest levels of service in the industry with our service guarantee offering a replacement vehicle and driver in case of an emergency anywhere in Sri Lanka 24 hours a day, 7 days a week.
+ 
+            </p>
+          </div>
+          <ul>
+            <li>Super reliable service</li>
+            <li>24/7 customer srvice</li>
+            <li>GPS tracking and help</li>
+            <li>Wide range vehicle</li>
+          </ul>
+        </div>
+        <div class="form">
+          <form name="myForm">
+            <div class="inpbox full">
+              <span class="flaticon-taxi"></span>
+              <select id="cars" name="cars">
+                <option value="">Select Vehicle</option>
+                <option value="volvo">Car</option>
+                <option value="saab">Van</option>
+                <option value="fiat">Suv/Jeep</option>
+                <option value="audi">Bus</option>
+              </select>
+            </div>
+            <div class="inpbox">
+              <span class="flaticon-globe"></span>
+              <input type="text" placeholder="Pickup Location">
+            </div>
+            <div class="inpbox">
+              <span class="flaticon-calendar"></span>
+              <input type="date" placeholder="Pickup Date">
+            </div>
+            <div class="inpbox">
+              <span class="flaticon-location"></span>
+              <input type="text" placeholder="Drop Location">
+            </div>
+            <div class="inpbox">
+              <span class="flaticon-calendar"></span>
+              <input type="date" placeholder="Drop Date">
+            </div>
+            <div class="inpbox">
+              <span class="flaticon-user"></span>
+              <input type="text" placeholder="Full Name">
+            </div>
+            <div class="inpbox">
+              <span class="flaticon-email"></span>
+              <input type="email" placeholder="Email">
+            </div>
+            <div class="inpbox full">
+              <div class="inrbox">
+                <span class="flaticon-taxi">Regular</span>
+                <input type="radio" name="plan">
+                <h2>Rs.5000</h2>
+                <span>1 Passenger</span>
+              </div>
+              <div class="inrbox">
+                <span class="flaticon-taxi">Pro</span>
+                <input type="radio" name="plan">
+                <h2>Rs.10 000</h2>
+                <span>2 Passenger</span>
+              </div>
+              <div class="inrbox">
+                <span class="flaticon-taxi">Advance</span>
+                <input type="radio" name="plan">
+                <h2>Rs.15 000</h2>
+                <span>4 Passenger</span>
+              </div>
+            </div>
+            <button class="subt">Submit</button>
+            
+            <button class="rst">Reset</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+          <!--Footer-->
+          <div class="footer_main">
+              <div class="footer_tabs">
+                  <div class="fabout">
+                      <h2>About us</h2>
+                      <img src="img/logo.png">
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis harum sint vero delectus culpa! Debitis necessitatibus veniam, facilis enim illum architecto dolorem et, incidunt, non labore laborum aut sint! Iure.</p>
+                      <ul>
+                          <a href="">
+                              <i class="fab fa-facebook-f"></i>
+                          </a>
+                          <a href="">
+                              <i class="fab fa-twitter"></i>
+                          </a>
+                          <a href="">
+                              <i class="fab fa-linkedin-in"></i>
+                          </a>
+                          <a href="">
+                              <i class="fab fa-instagram"></i>
+                          </a>    
+                      </ul>
+                  </div>
+                  <div class="fquicklink">
+                      <h2>Quick Links</h2>
+                      <div class="main_list">
+                      <div class="list_i">
+                          <ul>
+                            <a href="aboutus.html">About Us<li></li></a>
+                            <a href="account.html">Account<li></li></a>
+                            <a href="support.html">Support<li></li></a>
+                            <a href="bookup.html">View Booking<li></li></a>
+                            <a href="offer.html">Offers<li></li></a>
+                            <a href="vehicle.html">Vehicles<li></li></a>
+                        </ul>
+                    </div>
+                    <div class="list_ii">
+                        <ul>
+                            <a href="login.html">Sign In<li></li></a>
+                            <a href="signup.html">Sign Up<li></li></a>
+                            <a href="offer.html">Offers<li></li></a>
+                            <a href="#">Get a Receipt<li></li></a>
+                            <a href="#">Community<li></li></a>
+                          </ul>                    
+                      </div>
+                      </div>
+                  </div>
+                  <div class="fcontact">
+                      <h2>Contact Us</h2>
+                      <div class="mail">
+                          <svg class="lnr lnr-phone-handset"><use xlink:href="#lnr-phone-handset"></use></svg>
+                          <p>(123)-456-7890<br>(123)-456-7890</p>
+                      </div>
+                      <div class="phone">
+                          <svg class="lnr lnr-envelope"><use xlink:href="#lnr-envelope"></use></svg>
+                          <p>info@rideplace.com<br>support@rideplace.com</p>
+                      </div>
+                      <div class="location">
+                          <svg class="lnr lnr-map-marker"><use xlink:href="#lnr-map-marker"></use></svg>
+                          <p>123 Negambo Road<br>Kurunegala - Sri Lanka</p>
+                      </div>
+                  </div>
+              </div>
+              <hr>
+              <footer>
+                  <div class="fpara">
+                  <p>Copyright © RentNow 2022. All rights reserved.</p>
+                  </div>
+                  <div class="fpay">
+                      <p><i>We Accept</i></p>
+                      <img src="img/payments.png">
+                  </div>
+              </footer>
+              <hr>
+          </div>
+
+  </body>
+</html>

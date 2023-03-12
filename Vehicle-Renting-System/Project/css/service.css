@@ -1,0 +1,48 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.ourservice{
+    width: 70%;
+    margin: auto;
+    font-family: 'Raleway', sans-serif;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+.ourservice .b1{
+    display: flex;
+}
+
+.ourservice .b2{
+    display: flex;
+}
+
+.bbox{
+    border: 1px solid #212f3d;
+    border-radius: 20px;
+    margin: 40px;
+    text-align: center;
+    padding: 20px 10px;
+    background-color: white;
+    cursor: pointer;
+    width: 33.33%;
+    height: 300px;
+}
+
+.bbox h2{
+    padding-bottom: 20px;
+}
+
+.bbox i{
+    padding-bottom: 20px;
+}
+
+.bbox {
+    transition: 0.3s;
+  }
+.bbox:hover {
+    transform: translate(0, -10px);
+  }
+

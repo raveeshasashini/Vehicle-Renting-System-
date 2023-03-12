@@ -1,0 +1,164 @@
+
+		#first
+		{
+		background-image:url("our.jpg");
+		background-repeat:no-repeat;
+		background-attachment:fixed;
+		background-size:cover;
+		width: 100%;
+		height: 1080px;
+		margin-bottom:100px;
+		}
+		
+		#hi
+		{
+		font-size:50px;
+		color:white;
+		text-align:center;
+		text-decoration:bold;
+		font-style:normal;
+		
+		}
+		
+	
+		
+		.sec{
+		padding: 100px;
+		text-align: center;
+		font-family: 'Raleway',sans-serif;
+		color: #fff;
+		}
+
+		.shape{
+		height: 300px;
+		width: 100%;
+		background-color: #00D231;
+		}
+		
+		.third{
+			width:100%;
+			background-color:limegreen;
+			
+		}
+		
+		
+		#carimg
+		{	
+			background-image:url("car1.png");
+			background-repeat:no-repeat;
+			background-attachment:scroll;
+			width:35%;
+			height:300px;
+			float:left;
+			margin-left:80px;
+		}
+		
+		
+		#imgdes{
+			padding-top:50px;
+			font-family:'Raleway',sans-serif;
+			background-color:limegreen;
+			text-align:justify;
+			color:white;
+			width:60%;
+			float:right;
+			font-family: 'Raleway',sans-serif;
+			font-size: 16px;
+			}
+	
+		h1,h4{
+		font-family:'Raleway',sans-serif;
+		text-align:center;
+		font-size:30px;
+		}
+		h5{
+		 font-family:'Raleway',sans-serif;
+		text-align:center;
+		}
+		.v:hover
+		{
+		transform: scale(1.3);
+		transition: .1s;
+		}
+		.t:hover
+		{
+		transform: scale(1.3);
+		transition: .1s;
+		}
+		.u:hover
+		{
+		transform: scale(1.3);
+		transition: .1s;
+		}
+		
+		
+		.third{
+		padding-bottom:350px;
+		}
+		
+		.slideshow-container .mySlides h3
+		{
+		color:white;
+		text-align:center;
+		font-family:'Raleway',sans-serif;
+		text-align:center;
+		font-size:40px;
+		}
+		
+		.slideshow-container .mySlides p{
+		color:limegreen;
+		text-align:center;
+		}
+	
+	
+.slideshow-container {
+		margin-right:20px;
+		padding:100px;
+		width:53%;
+		margin: auto;
+		background-color:#152238;
+		font-size:20px;
+		text-align:center;
+        }
+
+
+.third span{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    text-align: center;
+    margin-right: 10px;
+    background: #fba707 none repeat scroll 0 0;
+    border-radius: 2px;
+    line-height: 20px;
+        }
+
+	
+	ul{
+		list-style-type:none;
+	}
+
+
+		.vbig{
+		display: block;
+		font-family: Verdana, sans-serif;
+		width: 68%;
+		font-weight: 700px;
+		font-size: 50px;
+		font-size: 4.28571rem;
+		line-height: 1;
+		letter-spacing: -3px;
+		position: center;
+		text-align: center;
+		z-index: -1;
+		color: rgba(211, 220, 225, 0.4);
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		-webkit-transform: translateY(-50%);
+		transform: translateY(-85%);
+		}
+	
+	
+	

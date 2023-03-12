@@ -1,0 +1,100 @@
+/* Get start with us and our service*/
+
+.service_main{
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 70px;
+}
+
+.service_main .s_body{
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    display: flex;
+    background-color: #FEF6D6;
+    border-radius: 10px;
+}
+
+.service_main .s_body .s1{
+    background-color: #f7fff6;
+    padding: 24px;
+    font-size: 16px;
+    line-height: 24px;
+    height: 100%;
+    border-radius: 10px;
+    width: 26%;
+}
+
+.service_main .s_body .s1 .head1{
+    padding-bottom: 15px;
+}
+
+.service_main .s_body .s1 table td{
+    padding-right: 10px;
+}
+
+.service_main .s_body .s2{
+    background-color: #FEF6D6;
+    padding: 24px;
+    font-size: 16px;
+    line-height: 24px;
+    height: 100%;
+    border-radius: 10px;
+    width: 74%;
+}
+
+.service_main .s_body .s2 .col{
+    display: flex;
+}
+
+.service_main .s_body .s2 .head2 h3{
+    padding-bottom: 20px;
+}
+
+.service_main .s_body .s2 .col h3{
+    padding-bottom: 10px;
+    padding-top: 15px;
+}
+.service_main .s_body .s2 .col p{
+    padding-bottom: 10px;
+    padding-top: 15px;
+}
+
+.service_main .s_body .s2 .col span{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 14px;
+    background-color: rgb(250,209,48,0.5);
+    position: relative;
+}
+
+.service_main .s_body .s2 .col svg{
+    fill: #fff;
+    vertical-align: middle;
+}
+
+.service_main .s_body .s2 .col .col1{
+    width: 33.3333%;
+}
+
+.service_main .s_body .s2 .col .col1 a{
+    text-decoration: none;
+}
+
+.service_main .s_body .s2 .col .col2{
+    width: 33.3333%;
+}
+.service_main .s_body .s2 .col .col3{
+    width: 33.3333%;
+}
+
+
+
+
+
+
+
+

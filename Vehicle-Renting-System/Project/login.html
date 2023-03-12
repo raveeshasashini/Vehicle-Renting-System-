@@ -1,0 +1,280 @@
+<!DOCTYPE html>    
+    <html>    
+    <head>    
+    <title>Login Form | Ride Place</title>      
+		<script src="login.js"></script>
+		<script src="jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="css/style.css"> <!--main css-->
+    <link rel="stylesheet" href="css/style6.css"> <!--Our partner, news letter and blog card -->
+    <link rel="stylesheet" href="css/offer.css"> <!-- Offer section -->
+    <!--Lnr icon-->
+    <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
+    
+    <style>
+    *{
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar{
+    background-color: #132833;
+    font-family: "Open Sans", sans-serif;
+}
+
+.navbar .nav_cent{
+    width: 90%;
+    margin: 0px auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+}
+
+.navbar .nav_cent .logo{
+    width: 50%;
+}
+
+.navbar .nav_cent .menu{
+    background-color: transparent;
+    width: 50%;
+}
+
+.navbar .nav_cent .menu a{
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 5px 20px;
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+}
+
+.navbar .nav_cent .menu a.active{
+    background-color: #00D231;
+    border-radius: 3px;
+}
+
+    body{  
+        margin: 0;  
+        padding: 0;  
+        background-color:white;  
+        font-family: 'Arial';  
+    }  
+    .login{  
+            width: 382px;  
+            overflow: hidden;  
+            margin: auto;  
+            margin: 20 0 50 450;  
+            padding: 80px;  
+            background: rgb(0,210,49,0.6);
+            border-radius: 15px ;  
+            bottom:20px;  
+			height:300px;
+    }  
+    .tx{  
+        text-align: center;  
+        color: black;  
+        padding: 20px;  
+    }  
+    label{  
+        color: black;  
+        font-size: 17px;  
+    }  
+    #Uname{  
+        width: 380px;  
+        height: 30px;  
+        border: none;  
+        border-radius: 3px;  
+        padding-left: 8px;  
+    }  
+    #Psw{  
+        width: 380px;  
+        height: 30px;  
+        border: none;  
+        border-radius: 3px;  
+        padding-left: 8px;  
+          
+    }  
+    #log{  
+        width: 390px;  
+        height: 30px;  
+        border: none;  
+        border-radius: 3px;  
+        padding-left: 8px;  
+        color: blue; 
+		
+      
+      
+    }
+
+#log:hover {
+  background-color:black;
+  color: white;
+}
+	
+    span{  
+        color: white;  
+        font-size: 17px;  
+    }  
+    .navi a{  
+        float: right;  
+        background-color: grey;  
+    } 
+
+#message {
+  display:none;
+  background: #f1f1f1;
+  color: #000;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+#message p {
+  padding: 10px 35px;
+  font-size: 18px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "&#10004;";
+}
+
+/* Add a red text color and an "x" icon when the requirements are wrong */
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "&#10006;";
+}
+        </style>
+    </head>    
+    <body background="lback.png">  
+
+<!--Nav bar-->
+<div class="navbar">
+  <div class="nav_cent">
+      <div class="logo">
+          <img src="img/logo.png">
+      </div>
+      <div class="menu" class="navi">
+        <a href="account.html">Account</a>
+        <a href="support.html">Contact</a>
+        <a href="offer.html">Offers</a>
+        <a href="vehicle.html">vehicles</a>
+        <a href="ourservice.html">Service</a>
+        <a href="aboutus.html">About</a>
+        <a class="active" href="index.html">Home</a>
+      </div>
+  </div>
+</div>
+
+		<h2 class="tx" style="margin-top: 50px;">Login</h2><br>
+        <div class="login" style="margin-bottom: 90px; margin-top: 0px;">   
+		
+		
+		
+        <form id="login" method="get" action="login.php" name="loginForm" style="font-family: Raleway, sans-serif;">    
+            <label><b>User Name    
+            </b>    
+            </label> 
+			 
+            <input type="text" name="Uname" id="Uname" placeholder="Username">    
+            <br><br>    
+            <label><b>Password     
+            </b>    
+            </label>    
+            <input type="Password" name="Pass" id="Psw" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>    
+            <br><br>  
+			
+            <input type="button" name="log" id="log" value="Log In Here" onfocus="check_form()"  onclick="document.location='bookup.html'">     
+            <br><br>    
+            <input type="checkbox" id="check">    
+            <span>Remember me</span>
+            <span><a href="#" style="text-decoration: none; background-color: transparent;">Forget Password</a> </span>
+        </form>     
+    </div> 
+        <!--Footer-->
+        <div class="footer_main">
+            <div class="footer_tabs">
+                <div class="fabout">
+                    <h2>About us</h2>
+                    <img src="img/logo.png">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis harum sint vero delectus culpa! Debitis necessitatibus veniam, facilis enim illum architecto dolorem et, incidunt, non labore laborum aut sint! Iure.</p>
+                    <ul>
+                        <a href="">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-instagram"></i>
+                        </a>    
+                    </ul>
+                </div>
+                <div class="fquicklink">
+                    <h2>Quick Links</h2>
+                    <div class="main_list">
+                    <div class="list_i">
+                        <ul>
+                            <a href="aboutus.html">About Us<li></li></a>
+                            <a href="account.html">Account<li></li></a>
+                            <a href="support.html">Support<li></li></a>
+                            <a href="bookup.html">View Booking<li></li></a>
+                            <a href="offer.html">Offers<li></li></a>
+                            <a href="vehicle.html">Vehicles<li></li></a>
+                        </ul>
+                    </div>
+                    <div class="list_ii">
+                        <ul>
+                            <a href="login.html">Sign In<li></li></a>
+                            <a href="signup.html">Sign Up<li></li></a>
+                            <a href="offer.html">Offers<li></li></a>
+                            <a href="#">Get a Receipt<li></li></a>
+                            <a href="#">Community<li></li></a>
+                        </ul>                    
+                    </div>
+                    </div>
+                </div>
+                <div class="fcontact">
+                    <h2>Contact Us</h2>
+                    <div class="mail">
+                        <svg class="lnr lnr-phone-handset"><use xlink:href="#lnr-phone-handset"></use></svg>
+                        <p>(123)-456-7890<br>(123)-456-7890</p>
+                    </div>
+                    <div class="phone">
+                        <svg class="lnr lnr-envelope"><use xlink:href="#lnr-envelope"></use></svg>
+                        <p>info@rideplace.com<br>support@rideplace.com</p>
+                    </div>
+                    <div class="location">
+                        <svg class="lnr lnr-map-marker"><use xlink:href="#lnr-map-marker"></use></svg>
+                        <p>123 Negambo Road<br>Kurunegala - Sri Lanka</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <footer>
+                <div class="fpara">
+                <p>Copyright © RentNow 2022. All rights reserved.</p>
+                </div>
+                <div class="fpay">
+                    <p><i>We Accept</i></p>
+                    <img src="img/payments.png">
+                </div>
+            </footer>
+            <hr>
+        </div>
+
+    </body>    
+    </html>     

@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!--SEO and Responsive-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ride Place - the fastest, safest and smartest way to book cabs and taxis in Sri Lanka.">
+    <meta name="keywords" content="rideplace, vehical booking, online vehicle booking service, cab service, rent cars">
+    <!--Title-->
+    <title>Ride Place | Cab and Taxi Booking Fastest, Safest and Smartest</title>
+    <!--favicon-->
+    <link href="img/icon.png" rel="icon">
+    <!--External css-->
+    <link rel="stylesheet" href="css/style.css"> <!--Nav, footer and Vshape-->
+    <link rel="stylesheet" href="css/style1.css"> <!--Testimonial-->
+    <link rel="stylesheet" href="css/style2.css"> <!--Our service and Get start with us-->
+    <link rel="stylesheet" href="css/style3.css"> <!--Vehicle Category-->
+    <link rel="stylesheet" href="css/style4.css"> <!--Count Section-->
+    <link rel="stylesheet" href="css/style5.css"> <!--Why need-->
+    <link rel="stylesheet" href="css/style6.css"> <!--Our partner, news letter and blog card -->
+    <link rel="stylesheet" href="css/style7.css"> <!--PreLoader -->
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e48d166edc.js" crossorigin="anonymous"></script>
+    <!--Lnr icon-->
+    <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
+    <!--Jquery-->
+    <script src="jquery-3.6.0.js"></script>
+    <style>
+    .itemBox {
+    transition: 0.3s;
+    }
+    .itemBox:hover {
+    transform: translate(0, -10px);
+    }
+    </style>
+</head>
+<body>
+
+    <!--Pre Loader-->
+    <div id="overlay">
+        <div class="spinner"></div> 
+    </div>
+
+    <script>
+    $(window).on('load', function() {
+    $('.spinner').fadeOut(1000);
+    $('#overlay').delay(1000).fadeOut('slow');
+    $('body').delay(1000).css({'overflow':'visible'});
+    })
+    </script>
+
+    <!--Top bar, Background Video and Navigation Start-->
+    <div class="head_section">
+    
+    <!--Video Background-->
+    <video autoplay loop muted plays-inline>
+        <source src="video/background1.mp4" type="video/mp4">
+    </video>
+
+    <!--Top and nav bar main div-->
+    <div class="both">
+
+    <!--Top bar-->
+    <div class="top">
+        <div class="top_cent">
+            <div class="info">
+                <a href=""><i class="fa fa-phone-alt mr-2"></i>&nbsp;&nbsp;+012 345 6789</a>
+                <span>|</span>
+                <a href=""><i class="fa fa-envelope mr-2"></i>&nbsp;&nbsp;info@rideplace.com</a>
+            </div>
+            <div class="social">
+                <a href="">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="">
+                    <i class="fab fa-youtube"></i>
+                </a>                                                  
+            </div>
+        </div>
+    </div>
+
+    <!--Nav bar-->
+    <div class="navbar">
+        <div class="nav_cent">
+            <div class="logo">
+                <img src="img/logo.png">
+            </div>
+            <div class="menu">
+                    <a href="account.html">Account</a>
+                    <a href="support.html">Contact</a>
+                    <a href="offer.html">Offers</a>
+                    <a href="vehicle.html">vehicles</a>
+                    <a href="ourservice.html">Service</a>
+                    <a href="aboutus.html">About</a>
+                    <a class="active" href="index.html">Home</a>
+            </div>
+        </div>
+    </div>
+
+    <!--Head content-->
+    <div class="head_text">
+        <h1>RidePlace</h1>
+        <p>24/7 Customer Support Guarantee, Quality vehicles with Unlimited Miles and Quality vehicles with Unlimited Miles </p>
+        <a href="bookup.html">BOOK NOW</a>
+    </div>
+    </div>
+    </div>
+
+
+    <!--Slanted Div Shape-->
+
+    <div class="vshape">
+        <div class="title_sec">
+        <h2>Search & Hire Vehicles</h2>
+        <span class="bigshadow">Search &amp; Hire Vehicles</span>
+        </div>
+        <form action="#">
+            <div class="boxlist">
+                <div class="iconin">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input type="text" placeholder="Pickup Location">
+                </div>
+                <div class="iconin">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input type="text" placeholder="Drop Location">
+                </div>
+                <div class="iconin">
+                    <i class="far fa-calendar-alt"></i>
+                    <input type="date" placeholder="Pickup Date">
+                </div>
+                <div class="iconin">
+                    <i class="far fa-clock"></i>
+                    <input type="date" placeholder="Pickup Date">
+                </div>
+            </div>
+            <div style="text-align:center">
+                <button class="btn" type="submit"><i class="fas fa-search"></i> Find Now</button>
+            </div>
+        </form>
+    </div>
+
+    <!--Introduction Section-->
+
+    <div class="intro_sec">
+        <div class="introm">
+            <div class="intro_title">
+                <h3>What Do You Know About Us</h3>
+                <h2>Who We Are ?</h2>
+                <p>We are RidePlace Vehicle Rentals, online cab booking aggregator, providing reliable and premium Intercity and Local vehicle rental services. Over the last decade, we are uniquely placed as the largest chauffeur driven car rental company in Sri Lanka in terms of geographical reach.</p>
+                <ul>
+                    <li><span><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg></span>We are a trusted name</li>
+                    <li><span><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg></span>We deal in have all brands</li>
+                    <li><span><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg></span>Have a larger stock of vehicles</li>
+                </ul>
+
+            </div>
+            <div class="img_lambo">
+                <img src="img/lambo.png" class="car-img">
+            </div>
+        </div>
+        <div class="signature">
+            <div class="left">
+                <img src="img/signature.png" width="184px">
+            </div>
+            <div class="right">
+                <div class="name">
+                    <h3>Sasanka Deshapriya</h3>
+                    <button class="aboutbtn"><a href="#">About Us</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Our service and Get start with us-->
+
+    <div class="service_main">
+        <div class="s_head">
+        </div>
+        <div class="s_body">
+            <div class="s1">
+                <div class="head1">
+                    <h3>Why should you book with us?</h3>
+                </div>
+                <table>
+                    <tr>
+                        <td>
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="30" cy="30" r="30" fill="#d9ffee"></circle>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M30 31.7229L24.5797 37.1432C24.1039 37.6189 23.3326 37.6189 22.8568 37.1432C22.3811 36.6674 22.3811 35.8961 22.8568 35.4203L28.2771 30L22.8568 24.5797C22.3811 24.1039 22.3811 23.3326 22.8568 22.8568C23.3326 22.3811 24.1039 22.3811 24.5797 22.8568L30 28.2771L35.4203 22.8568C35.8961 22.3811 36.6674 22.3811 37.1432 22.8568C37.6189 23.3326 37.6189 24.1039 37.1432 24.5797L31.7229 30L37.1432 35.4203C37.6189 35.8961 37.6189 36.6674 37.1432 37.1432C36.6674 37.6189 35.8961 37.6189 35.4203 37.1432L30 31.7229Z" fill="#00D231"></path>
+                            </svg>
+                        </td>
+                        <td>
+                            No Hidden Fees
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="30" cy="30" r="30" fill="#d9ffee"></circle>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M37.7308 32.0769C37.7308 25.5969 34.6154 22.7308 34.6154 22.7308C33.0878 26.2952 29.8124 26.8634 26.8705 27.3737C23.8128 27.9042 21.1154 28.3721 21.1154 32.0769H20.0769V33.1154C20.0769 33.9463 20.3333 34.4911 20.7608 34.8651C21.0097 35.0829 21.2545 35.1951 21.3672 35.2233L21.9203 35.3616L22.1006 35.9024C22.122 35.9668 22.1563 36.058 22.2039 36.1719L22.3168 36.429L22.4661 36.7399C22.7973 37.4024 23.2174 38.0657 23.7305 38.6813C25.1684 40.4069 27.0314 41.4231 29.4231 41.4231H35.2623C33.7867 42.6142 31.8552 43.5 29.4231 43.5C26.3628 43.5 23.9421 42.1796 22.1349 40.011C21.2446 38.9426 20.6524 37.877 20.3078 37.0356L20.1319 36.9461C19.8939 36.8169 19.6431 36.6469 19.3931 36.4282C18.5225 35.6664 18 34.5561 18 33.1154V32.0769V31.0385V27.9231C18 20.6538 24.2308 16.5 29.4231 16.5C33.5769 16.5 34.6154 18.5769 34.6154 18.5769C38.7692 18.5769 40.8462 23.7692 40.8462 27.9231V30.2776C41.4671 30.6366 41.8846 31.3078 41.8846 32.0769V33.1154C41.8846 33.9092 41.4398 34.5987 40.7858 34.9483C40.4033 37.4387 38.2512 39.3462 35.6538 39.3462H30.4615C30.3814 39.3462 30.3034 39.3371 30.2284 39.3199C30.1357 39.3371 30.04 39.3462 29.9423 39.3462H28.9038C28.044 39.3462 27.3462 38.6483 27.3462 37.7885C27.3462 36.9286 28.044 36.2308 28.9038 36.2308H29.9423C30.6201 36.2308 31.1973 36.6644 31.4113 37.2692H35.6538C37.0102 37.2692 38.1642 36.4023 38.5919 35.1923H37.7308L37.7308 32.0769Z" fill="#00D231"></path>
+                            </svg>
+                        </td>
+                        <td>
+                            24/7 Multilingual Customer Service
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="30" cy="30" r="30" fill="#d9ffee"></circle>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M26.3498 37.4992C25.9414 37.5124 25.5286 37.3645 25.2168 37.0555L20.4484 32.3282C19.8505 31.7355 19.8505 30.7746 20.4484 30.1819C21.0463 29.5892 22.0156 29.5892 22.6134 30.1819L26.3498 33.886L37.3866 22.9445C37.9844 22.3518 38.9537 22.3518 39.5516 22.9445C40.1495 23.5372 40.1495 24.4982 39.5516 25.0909L27.4827 37.0555C27.171 37.3645 26.7582 37.5124 26.3498 37.4992Z" fill="#00D231"></path>
+                            </svg>
+                        </td>
+                        <td>
+                            Free Cancellation
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="30" cy="30" r="30" fill="#d9ffee"></circle>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M39.8182 26.3864C41.0182 26.3864 42 27.3682 42 28.5682H41.8909V30.75C41.8909 30.9682 41.8909 31.2954 41.7818 31.5136L38.5091 39.2591C38.1818 40.0227 37.4182 40.5682 36.5455 40.5682H26.7273C25.5273 40.5682 24.5455 39.5864 24.5455 38.3864V27.4773C24.5455 26.8227 24.7636 26.2773 25.2 25.95L32.4 18.75L33.6 19.8409C33.8182 20.1682 34.0364 20.6045 34.0364 21.0409V21.3682L32.9455 26.3864H39.8182ZM22.3636 40.5682H18V27.4773H22.3636V40.5682Z" fill="#00D231"></path>
+                            </svg>
+                        </td>
+                        <td>
+                            Information You Can Trust
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="s2">
+                <div class="head2">
+                    <h3>Get started with 3 simple steps</h3>
+                </div>
+                <div class="col">
+                    <div class="col1">
+                        <span>
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21,10.5H20v-1a1,1,0,0,0-2,0v1H17a1,1,0,0,0,0,2h1v1a1,1,0,0,0,2,0v-1h1a1,1,0,0,0,0-2Zm-7.7,1.72A4.92,4.92,0,0,0,15,8.5a5,5,0,0,0-10,0,4.92,4.92,0,0,0,1.7,3.72A8,8,0,0,0,2,19.5a1,1,0,0,0,2,0,6,6,0,0,1,12,0,1,1,0,0,0,2,0A8,8,0,0,0,13.3,12.22ZM10,11.5a3,3,0,1,1,3-3A3,3,0,0,1,10,11.5Z"></path></svg>
+						</span>
+						<h3>Create a profile</h3>
+						<p>If you are going to use a passage of Lorem Ipsum, you need to be sure. <br><a href="signup.html">Get started</a></p>
+                    </div>
+                    <div class="col2">
+                        <span>
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.62,13.08a.9.9,0,0,0-.54.54,1,1,0,0,0,1.3,1.3,1.15,1.15,0,0,0,.33-.21,1.15,1.15,0,0,0,.21-.33A.84.84,0,0,0,8,14a1.05,1.05,0,0,0-.29-.71A1,1,0,0,0,6.62,13.08Zm13.14-4L18.4,5.05a3,3,0,0,0-2.84-2H8.44A3,3,0,0,0,5.6,5.05L4.24,9.11A3,3,0,0,0,2,12v4a3,3,0,0,0,2,2.82V20a1,1,0,0,0,2,0V19H18v1a1,1,0,0,0,2,0V18.82A3,3,0,0,0,22,16V12A3,3,0,0,0,19.76,9.11ZM7.49,5.68A1,1,0,0,1,8.44,5h7.12a1,1,0,0,1,1,.68L17.61,9H6.39ZM20,16a1,1,0,0,1-1,1H5a1,1,0,0,1-1-1V12a1,1,0,0,1,1-1H19a1,1,0,0,1,1,1Zm-3.38-2.92a.9.9,0,0,0-.54.54,1,1,0,0,0,1.3,1.3.9.9,0,0,0,.54-.54A.84.84,0,0,0,18,14a1.05,1.05,0,0,0-.29-.71A1,1,0,0,0,16.62,13.08ZM13,13H11a1,1,0,0,0,0,2h2a1,1,0,0,0,0-2Z"></path></svg>
+						</span>
+						<h3>Tell us what Vehicle you want</h3>
+						<p>Various versions have evolved over the years, sometimes by accident, sometimes on purpose</p>
+                    </div>
+                    <div class="col3">
+                        <span>
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71,16.71l-2.42-2.42a1,1,0,0,0-1.42,0l-3.58,3.58a1,1,0,0,0-.29.71V21a1,1,0,0,0,1,1h2.42a1,1,0,0,0,.71-.29l3.58-3.58A1,1,0,0,0,20.71,16.71ZM16,20H15V19l2.58-2.58,1,1Zm-6,0H6a1,1,0,0,1-1-1V5A1,1,0,0,1,6,4h5V7a3,3,0,0,0,3,3h3v1a1,1,0,0,0,2,0V9s0,0,0-.06a1.31,1.31,0,0,0-.06-.27l0-.09a1.07,1.07,0,0,0-.19-.28h0l-6-6h0a1.07,1.07,0,0,0-.28-.19.32.32,0,0,0-.09,0L12.06,2H6A3,3,0,0,0,3,5V19a3,3,0,0,0,3,3h4a1,1,0,0,0,0-2ZM13,5.41,15.59,8H14a1,1,0,0,1-1-1ZM8,14h6a1,1,0,0,0,0-2H8a1,1,0,0,0,0,2Zm0-4H9A1,1,0,0,0,9,8H8a1,1,0,0,0,0,2Zm2,6H8a1,1,0,0,0,0,2h2a1,1,0,0,0,0-2Z"></path></svg>
+						</span>
+						<h3>Make a deal</h3>
+						<p>There are many variations of passages of Lorem available, but the majority have suffered alteration</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+    <!--Testimonial Slider-->
+
+
+    <section class="testim" id="testim">
+        <div class="wrap">
+
+            <span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
+            <span id="left-arrow" class="arrow left fa fa-chevron-left"></span>
+
+            <ul class="dots" id="testim-dots">
+                <li class="dot active"></li>
+                <li class="dot"></li>
+                <li class="dot"></li>
+                <li class="dot"></li>
+                <li class="dot"></li>
+            </ul>
+
+            <div class="cont" id="testim-content">
+
+                <div class="active">
+                    <div class="img"><img src="img/p1.jpg"></div>
+                    <h2>Prompt support team, transparent pricing and a good experience. Will try again!</h2>
+                    <p>The driver, Shiva, who was sent to drive us to our destination is a class act, and is up there among the best, whether it is local knowledge, skilled driving, keeping a good conversation or looking for our well being as his passengers. I hope the company nurtures natural, organic talent like these.</p>
+                </div>
+                
+                <div>
+                    <div class="img"><img src="img/p2.jpg"></div>
+                    <h2>Gentlemanly behaviour by the driver. Had a fantastic experience.</h2>
+                    <p>My dad who is a senior citizen took a cab from Delhi to Jaipur and forgot his bag in the cab itself. He realized this only when the driver was halfway back to Delhi. The driver took great pains to return it. Special thanks to the cab driver Shoaib. Kudos.</p>
+                </div>
+                
+                <div>
+                    <div class="img"><img src="img/p3.jpg"></div>
+                    <h2>Savaari truly defines Vocal for Local, providing a hassle free service.</h2>
+                    <p>During the lockdown, I tried Savaari for the first time. The cab was on time and I got a great service. I believe we should promote local cabs which provide great service instead of the other well-known brands. Nowadays our local cabs understand the importance of customer experience and are fulfilling our needs.</p>
+                </div>
+                
+                <div>
+                    <div class="img"><img src="img/p4.jpg"></div>
+                    <h2>Excellent service, equaling the service provided abroad. </h2>
+                    <p>Booking cars online was unbelievably comfortable. Cancelling and modifying bookings were beautifully processed. Executives constantly contacted to serve us and our outstation trip from Delhi to Agra was an unforgettable experience.</p>
+                </div>
+                
+                <div>
+                    <div class="img"><img src="img/p5.jpg"></div>
+                    <h2>Gentlemanly behaviour by the driver. Had a fantastic experience.</h2>
+                    <p>My dad who is a senior citizen took a cab from Delhi to Jaipur and forgot his bag in the cab itself. He realized this only when the driver was halfway back to Delhi. The driver took great pains to return it. Special thanks to the cab driver Shoaib. Kudos.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <br><br>
+    <script src="js/script.js"></script>
+
+    <!--Vehicle Category-->
+    <div class="c_head">
+        <h2>Popular Vehicles</h2>
+        <span class="vbig">Popular Vehicles</span>
+    </div>
+    <section class="category">
+        <ul>
+            <li class="list active" data-filter="car">
+                <div class="imgs">
+                    <img src="img/car.png" alt="Image">
+                </div>
+                <div class="lab">
+                    <lable>Car</lable>
+                </div>
+            </li>
+            <li class="list" data-filter="van">
+                <div class="imgs">
+                    <img src="img/van.png" alt="Image">
+                </div>
+                <div class="lab">
+                    <lable>Van</lable>
+                </div>
+            </li>
+            <li class="list" data-filter="suv">
+                <div class="imgs">
+                    <img src="img/suv.png" alt="Image">
+                </div>
+                <div class="lab">
+                    <lable>SUV/Jeep</lable>
+                </div>
+            </li>
+            <li class="list" data-filter="bus">
+                <div class="imgs">
+                    <img src="img/bus.png" alt="Image">
+                </div>
+                <div class="lab">
+                    <lable>Bus</lable>
+                </div>
+            </li>
+        </ul>
+        <div class="product">
+            <div class="itemBox" data-item="car">
+                <div class="carname">
+                    <img src="img/axio.png">
+                    <h3>Luxury AC Car</h3>
+                    <p>Luxury Ac Cars are available in Sri Lanka for a reasonable price per day.</p>
+                    <div class="greenbox">
+                        <div class="price">
+                            <h2>$20.50 /day</h2>
+                        </div>
+                    </div>
+                    <div class="offer-action">
+                        <a href="bookup.html" class="offer-btn-1">Rent Car</a>
+                                 <a href="#" class="offer-btn-2">Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="itemBox" data-item="van">
+                <div class="carname">
+                    <img src="img/mini-van-removebg-preview.png">
+                    <h3>Luxury AC Mini Van</h3>
+                    <p>Mini Vans (Luxury) are available in Sri Lanka for a reasonable price per day</p>
+                    <div class="greenbox">
+                        <div class="price">
+                            <h2>$26.50 /day</h2>
+                        </div>
+                    </div>
+                    <div class="offer-action">
+                        <a href="bookup.html" class="offer-btn-1">Rent Car</a>
+                                 <a href="#" class="offer-btn-2">Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="itemBox" data-item="suv">
+                <div class="carname">
+                    <img src="img/chr-removebg-preview.png">
+                    <h3>Luxury AC SUV</h3>
+                    <p>Luxury SUV's are available in Sri Lanka for a reasonable price per day</p>
+                    <div class="greenbox">
+                        <div class="price">
+                            <h2>$30.00 /day</h2>
+                        </div>
+                    </div>
+                    <div class="offer-action">
+                        <a href="bookup.html" class="offer-btn-1">Rent Car</a>
+                                 <a href="#" class="offer-btn-2">Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="itemBox" data-item="bus">
+                <div class="carname">
+                    <img src="img/mini-bus-removebg-preview.png">
+                    <h3>Luxury AC Mini Bus</h3>
+                    <p>Mini Buses (Luxury) are available in Sri Lanka for a reasonable price per day</p>
+                    <div class="greenbox">
+                        <div class="price">
+                            <h2>$60.00 /day</h2>
+                        </div>
+                    </div>
+                    <div class="offer-action">
+                        <a href="bookup.html" class="offer-btn-1">Rent Car</a>
+                                 <a href="#" class="offer-btn-2">Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="itemBox" data-item="car">
+                <div class="carname">
+                    <img src="img/bmw.png">
+                    <h3>Super Luxury Car</h3>
+                    <p>Super Luxury Cars are available in Sri Lanka for a reasonable price per day</p>
+                    <div class="greenbox">
+                        <div class="price">
+                            <h2>$30.00 /day</h2>
+                        </div>
+                    </div>
+                    <div class="offer-action">
+                        <a href="bookup.html" class="offer-btn-1">Rent Car</a>
+                                 <a href="#" class="offer-btn-2">Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="itemBox" data-item="van">
+                <div class="carname">
+                    <img src="img/van-removebg-preview.png">
+                    <h3>Luxury AC Van</h3>
+                    <p>Luxury Vans are available in Sri Lanka for a reasonable price per day</p>
+                    <div class="greenbox">
+                        <div class="price">
+                            <h2>$30.00 /day</h2>
+                        </div>
+                    </div>
+                    <div class="offer-action">
+                        <a href="bookup.html" class="offer-btn-1">Rent Car</a>
+                                 <a href="#" class="offer-btn-2">Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="itemBox" data-item="suv">
+                <div class="carname">
+                    <img src="img/super-suv-removebg-preview.png">
+                    <h3>Super Luxury SUV</h3>
+                    <p>Super Luxury SUV's are available in Sri Lanka for a reasonable price per day</p>
+                    <div class="greenbox">
+                        <div class="price">
+                            <h2>$30.00 /day</h2>
+                        </div>
+                    </div>
+                    <div class="offer-action">
+                        <a href="bookup.html" class="offer-btn-1">Rent Car</a>
+                                 <a href="#" class="offer-btn-2">Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="itemBox" data-item="bus">
+                <div class="carname">
+                    <img src="img/bus-removebg-preview.png">
+                    <h3>Luxury AC Bus</h3>
+                    <p>Luxury Buses are available in Sri Lanka for a reasonable price per day</p>
+                    <div class="greenbox">
+                        <div class="price">
+                            <h2>$80.00 /day</h2>
+                        </div>
+                    </div>
+                    <div class="offer-action">
+                        <a href="bookup.html" class="offer-btn-1">Rent Car</a>
+                                 <a href="#" class="offer-btn-2">Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/script1.js"></script>
+    <br><br>
+
+
+    <!--Partner section-->
+
+    <div class="p_main">
+        <div class="p_head">
+            <h2>Our Partners</h2>
+            <span class="ourbig">Our Partners</span>
+        </div>
+        <div class="partner">
+            <div class="brand">
+                <img src="img/6.png">
+            </div>
+            <div class="brand">
+                <img src="img/2.png">
+            </div>
+            <div class="brand">
+                <img src="img/3.png">
+            </div>
+            <div class="brand">
+                <img src="img/4.png">
+            </div>
+            <div class="brand">
+                <img src="img/5.png">
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <!--Counting number-->
+    <div class="project-counter-wrp">
+        <ul>
+            <li>
+                <i class="fa fa-car" style="color:#00D231;"></i>
+                <p id="number1" class="number">320</p>
+                <span></span>
+                <p>Cars For Rent</p>
+            </li>
+            <li>
+                <i class="fa fa-smile-o" style="color:#00D231;"></i>
+                <p id="number2" class="number">4600</p>
+                <span></span>
+                <p>Happy Clients</p>
+            </li>
+            <li>
+                <i class="fa fa-star" style="color:#00D231;"></i>
+                <p id="number3" class="number">2900</p>
+                <span></span>
+                <p>Positive Reviews</p>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        var project = setInterval(projectDone, 10)
+        var clients = setInterval(happyClients, 10)
+        var reviews = setInterval(positiveReviews, 10)
+        let count1 = 1;
+        let count2 = 1;
+        let count3 = 1;
+
+        function projectDone() {
+            count1++
+            document.querySelector("#number1").innerHTML = count1
+            if (count1 == 320) {
+                clearInterval(project)
+            }
+        }
+
+        function happyClients() {
+            count2++
+            document.querySelector("#number2").innerHTML = count2
+            if (count2 == 4600) {
+                clearInterval(clients)
+            }
+        }
+
+        function positiveReviews() {
+            count3++
+            document.querySelector("#number3").innerHTML = count3
+            if (count3 == 2900) {
+                clearInterval(reviews)
+            }
+        }
+    </script>
+    <br><br>
+
+    <!--what do you need to pick the vwhicle-->
+    <div class="how_head">
+        <h2>How It's Work?</h2>
+        <span class="hbig">How It's Work?</span>
+    </div>
+    <div class="main_need">
+        <div class="col1">
+            <h2>
+                What do you need to pick up the car?
+            </h2>
+        </div>
+        <div class="col2">
+            <table>
+                <tr>
+                    <td>
+                        <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="40" cy="40" r="40" fill="#D9FFEE"></circle>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M48.8704 28H54.2704C56.3296 28 58 29.6704 58 31.7368V48.2464C58 50.3056 56.3296 51.976 54.2704 51.976H25.7296C23.6704 51.976 22 50.3056 22 48.2464V31.7368C22 29.6704 23.6704 28 25.7368 28H31.1368V29.5984H30.3592C29.8408 29.5984 29.4232 30.016 29.4232 30.5344C29.4232 31.0528 29.8408 31.4704 30.3592 31.4704H33.7792C34.2976 31.4704 34.7152 31.0528 34.7152 30.5344C34.7152 30.016 34.2976 29.5984 33.7792 29.5984H33.0016V28H47.0056V29.5984H46.228C45.7096 29.5984 45.292 30.016 45.292 30.5344C45.292 31.0528 45.7096 31.4704 46.228 31.4704H49.648C50.1664 31.4704 50.584 31.0528 50.584 30.5344C50.584 30.016 50.1664 29.5984 49.648 29.5984H48.8704V28ZM35.4498 38.1592C35.4498 36.4024 34.0242 34.9768 32.2674 34.9768C30.5106 34.9768 29.085 36.4024 29.085 38.1592C29.085 39.916 30.5106 41.3416 32.2674 41.3416C34.0242 41.3416 35.4498 39.916 35.4498 38.1592ZM25.3192 47.7424C25.3192 44.4736 27.9688 41.824 31.2376 41.824H33.304C36.5728 41.824 39.2224 44.4736 39.2224 47.7424H25.3192ZM42.3831 46.5976H53.8887C54.3279 46.5976 54.6807 46.2448 54.6807 45.8128C54.6807 45.3808 54.3279 45.028 53.8959 45.028H42.3831C41.9511 45.028 41.5983 45.3808 41.5983 45.8128C41.5983 46.2448 41.9511 46.5976 42.3831 46.5976ZM53.8887 42.148H42.3831C41.9511 42.148 41.5983 41.7952 41.5983 41.3632C41.5983 40.9312 41.9511 40.5784 42.3831 40.5784H53.8959C54.3279 40.5784 54.6807 40.9312 54.6807 41.3632C54.6807 41.7952 54.3279 42.148 53.8887 42.148ZM42.3831 37.6984H53.8887C54.3279 37.6984 54.6807 37.3456 54.6807 36.9136C54.6807 36.4816 54.3279 36.1288 53.8959 36.1288H42.3831C41.9511 36.1288 41.5983 36.4816 41.5983 36.9136C41.5983 37.3456 41.9511 37.6984 42.3831 37.6984Z" fill="#00D231"></path>
+                        </svg>
+                    </td>
+                    <td>
+                        <h4>Driver’s License</h4>
+                        <p>A valid driver's license in the name of the main driver. <a href="#" target="_blank">What type of driver's license do I need?</a></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="40" cy="40" r="40" fill="#D9FFEE"></circle>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M27.5767 21.9502H51.5C52.3706 21.9502 53.0768 22.6559 53.0768 23.5269V56.4729C53.0768 57.3436 52.3706 58.0496 51.5 58.0496H27.5767C26.7056 58.0496 26 57.3436 26 56.4729V23.5269C26 22.6558 26.7056 21.9502 27.5767 21.9502ZM32.6202 43.1444C32.6198 43.1444 32.6198 43.1439 32.6198 43.1439C30.9304 41.342 29.9999 38.9888 30 36.5186C30 34.0484 30.9305 31.6956 32.6198 29.8932L32.6203 29.8928C34.4473 27.9421 37.0262 26.8233 39.6948 26.8233C42.3629 26.8233 44.9419 27.9421 46.7693 29.8928C48.46 31.6969 49.3909 34.0501 49.3909 36.5186C49.3909 38.9875 48.4596 41.3407 46.7693 43.1444C44.9458 45.0907 42.3744 46.2085 39.7129 46.2133C39.7111 46.2133 39.7097 46.2138 39.708 46.2138H39.7053H39.6948C37.0261 46.2138 34.4477 45.0951 32.6202 43.1444ZM37.911 31.5586C37.8862 31.6453 37.8613 31.7328 37.8374 31.8245C37.8259 31.8686 37.8147 31.9151 37.8036 31.9613L37.8036 31.9613L37.7935 32.0033C37.7771 32.0684 37.7614 32.135 37.7455 32.2026L37.7407 32.2233C37.936 32.2717 38.1327 32.3118 38.3302 32.3456C38.3488 32.3487 38.3675 32.3514 38.3861 32.3542C38.4047 32.3569 38.4234 32.3597 38.442 32.3628C38.6153 32.3896 38.7895 32.4112 38.9637 32.4266L38.9916 32.4293C39.0188 32.432 39.0461 32.4347 39.0732 32.4367C39.4867 32.4684 39.9025 32.4684 40.316 32.4367C40.3437 32.4347 40.3713 32.432 40.3989 32.4294L40.399 32.4293L40.4282 32.4266C40.6011 32.4108 40.7739 32.3896 40.9456 32.3628L40.9712 32.359C41.0012 32.3547 41.0311 32.3503 41.0612 32.3452C41.2579 32.3118 41.4541 32.2717 41.6486 32.2233C41.6319 32.1512 41.6147 32.0799 41.5976 32.01L41.5816 31.9444C41.5716 31.9032 41.5616 31.8621 41.5513 31.8226C41.5281 31.7329 41.5036 31.6476 41.4794 31.563L41.4794 31.563L41.4726 31.5392L41.4582 31.4878L41.4581 31.4877C41.448 31.4513 41.4378 31.4146 41.4274 31.38C41.3961 31.2757 41.3639 31.1776 41.3314 31.0804C41.3272 31.0674 41.323 31.054 41.3187 31.0406L41.3187 31.0405L41.3187 31.0404C41.3119 31.0187 41.305 30.9969 41.298 30.9765C41.2539 30.849 41.209 30.7276 41.1642 30.6123C41.1572 30.5944 41.1501 30.5776 41.1429 30.5608L41.1429 30.5607C41.1391 30.5517 41.1353 30.5427 41.1315 30.5335C41.1295 30.5287 41.1275 30.5239 41.1255 30.519C41.0925 30.4381 41.0595 30.3576 41.0261 30.2828C41.0133 30.2541 41.0005 30.2273 40.9877 30.2006L40.9706 30.1649L40.9654 30.1536L40.9653 30.1536L40.9653 30.1536C40.939 30.0974 40.9126 30.0412 40.8862 29.9889C40.8716 29.96 40.8568 29.9327 40.8421 29.9056L40.825 29.8741L40.8135 29.8526L40.8135 29.8526C40.7906 29.8101 40.768 29.7679 40.745 29.7284C40.7288 29.7001 40.7122 29.6731 40.6959 29.6464L40.6825 29.6246C40.6566 29.5819 40.6306 29.5401 40.6046 29.5009C40.5835 29.4692 40.5624 29.4393 40.5412 29.4094C40.5157 29.3733 40.4906 29.3386 40.4656 29.3056C40.4445 29.2783 40.4237 29.2524 40.4031 29.2273C40.378 29.1969 40.3534 29.1683 40.3287 29.141C40.309 29.119 40.2887 29.097 40.2689 29.0768C40.2444 29.0517 40.2201 29.0284 40.196 29.0064L40.196 29.0064L40.1959 29.0064C40.177 28.9888 40.1581 28.9712 40.1396 28.9558C40.1154 28.9356 40.0921 28.918 40.0683 28.9008L40.06 28.8946C40.0454 28.8837 40.0304 28.8726 40.0164 28.863C39.9923 28.8476 39.9694 28.8353 39.9465 28.823L39.9357 28.817C39.9238 28.8103 39.9117 28.8037 39.9003 28.7983C39.8756 28.7868 39.8519 28.7794 39.8285 28.7723C39.8243 28.7709 39.8199 28.7692 39.8155 28.7676C39.8077 28.7646 39.7998 28.7617 39.7925 28.76C39.7582 28.7516 39.7256 28.7468 39.6948 28.7468C39.664 28.7468 39.6311 28.7516 39.5967 28.76C39.59 28.7616 39.5831 28.7641 39.5762 28.7666C39.5715 28.7683 39.5669 28.77 39.5623 28.7715L39.5548 28.7739C39.5332 28.781 39.5117 28.788 39.4889 28.7983C39.4798 28.8024 39.4706 28.8077 39.4613 28.813C39.4581 28.8149 39.4548 28.8167 39.4516 28.8185C39.4492 28.8199 39.4468 28.8212 39.4444 28.8225C39.4206 28.8348 39.3973 28.8475 39.3731 28.8634C39.3621 28.8706 39.3509 28.8789 39.3396 28.8872L39.3221 28.8999C39.2983 28.9175 39.2741 28.9355 39.2495 28.9562C39.236 28.9674 39.2222 28.9799 39.2084 28.9924L39.2084 28.9925L39.2084 28.9925L39.1945 29.005C39.1699 29.0279 39.1448 29.0517 39.1197 29.0776C39.1022 29.0955 39.0843 29.1149 39.0664 29.1344L39.0664 29.1345L39.0621 29.1392C39.0366 29.1678 39.0111 29.1972 38.9852 29.2289C38.9654 29.2531 38.9456 29.2782 38.9253 29.3041C38.8994 29.338 38.8734 29.3741 38.8471 29.4115C38.8268 29.44 38.8065 29.4687 38.7863 29.4995C38.7594 29.5399 38.7321 29.5835 38.7054 29.6275L38.6881 29.6557C38.6739 29.6788 38.6595 29.702 38.6455 29.7264C38.6215 29.7675 38.5979 29.8115 38.5741 29.8559L38.5741 29.856L38.5741 29.8561L38.5615 29.8795L38.5424 29.9151C38.5298 29.9383 38.5173 29.9616 38.5048 29.9864C38.4744 30.0463 38.444 30.1105 38.4141 30.1747L38.3986 30.2074C38.387 30.2314 38.3756 30.2552 38.3644 30.2808C38.3274 30.3635 38.2909 30.4523 38.2544 30.543C38.25 30.5539 38.2455 30.5644 38.241 30.5748L38.2409 30.5749L38.2409 30.5749C38.236 30.5863 38.2311 30.5977 38.2263 30.6098C38.1805 30.7264 38.1353 30.8496 38.0907 30.9785C38.0863 30.9915 38.082 31.0053 38.0777 31.0191L38.0777 31.0191L38.0777 31.0192C38.0739 31.0314 38.07 31.0437 38.0661 31.0555C38.0305 31.1611 37.9953 31.2684 37.9614 31.3824C37.9515 31.4151 37.9417 31.4499 37.932 31.4844L37.932 31.4845L37.9201 31.5267L37.911 31.5586ZM41.546 41.5729C41.5724 41.4739 41.5988 41.3745 41.6239 41.2703C41.6354 41.2226 41.6463 41.1729 41.6571 41.1233L41.6705 41.0623C41.6877 40.9866 41.7048 40.91 41.7211 40.8318C41.5153 40.779 41.3076 40.7359 41.0986 40.6993C41.0682 40.6939 41.0376 40.6893 41.007 40.6847L40.9649 40.6783C40.7937 40.651 40.6217 40.6294 40.4493 40.6136L40.422 40.6108C40.3906 40.6076 40.3592 40.6045 40.3278 40.6021C39.9064 40.5691 39.4827 40.5691 39.0617 40.6021C39.0314 40.6044 39.0011 40.6074 38.9708 40.6104L38.939 40.6136C38.7665 40.6298 38.594 40.6514 38.423 40.6783L38.379 40.6851L38.3788 40.6851C38.3498 40.6896 38.3207 40.6941 38.2919 40.6993C38.0828 40.7359 37.8748 40.7786 37.6689 40.8318C37.6843 40.9052 37.7002 40.9774 37.7161 41.0489L37.7243 41.0861L37.7386 41.1497C37.7473 41.189 37.7561 41.2285 37.7652 41.2664C37.792 41.3799 37.8206 41.4877 37.8492 41.595C37.8549 41.6161 37.8603 41.6377 37.8658 41.6593C37.8718 41.6831 37.8778 41.7068 37.884 41.7296C37.9253 41.8779 37.9676 42.0208 38.0111 42.1572C38.0134 42.1647 38.0157 42.1715 38.0182 42.1785L38.0226 42.1911C38.0626 42.3143 38.1031 42.4339 38.1445 42.5475C38.1554 42.5778 38.1666 42.6063 38.1779 42.635L38.1942 42.6768C38.2232 42.7533 38.2527 42.8308 38.2826 42.9029C38.2987 42.9415 38.3148 42.9778 38.331 43.0146L38.3311 43.0148L38.3412 43.0375L38.3428 43.0412C38.37 43.1038 38.3971 43.1663 38.4247 43.2249C38.44 43.2578 38.4558 43.2891 38.4715 43.3203L38.4868 43.3508C38.5141 43.4062 38.5413 43.4608 38.5691 43.5122C38.5882 43.5486 38.6078 43.5831 38.6273 43.6175L38.6274 43.6176L38.6332 43.6279C38.6601 43.6754 38.6869 43.7216 38.7138 43.7656C38.7326 43.7961 38.7514 43.8253 38.77 43.8541L38.7701 43.8542L38.7793 43.8686C38.8062 43.9095 38.8326 43.9491 38.8595 43.9869C38.8805 44.0173 38.9021 44.0463 38.9236 44.0745C38.9501 44.1096 38.977 44.1431 39.0033 44.1748C39.024 44.1998 39.0451 44.225 39.0657 44.2478C39.0921 44.2773 39.1181 44.3045 39.144 44.3305L39.1616 44.3479C39.1758 44.3621 39.1898 44.3761 39.2038 44.3885C39.2303 44.4128 39.2558 44.4335 39.2813 44.4537L39.3001 44.4688C39.3127 44.479 39.3251 44.4891 39.3371 44.4977C39.3613 44.515 39.3847 44.5286 39.4081 44.5422L39.4146 44.5461C39.4177 44.5479 39.4209 44.5497 39.424 44.5516C39.4267 44.5533 39.4294 44.555 39.4321 44.5566L39.4321 44.5567C39.4429 44.5633 39.4537 44.57 39.4643 44.5752C39.492 44.5888 39.5184 44.598 39.5452 44.6073C39.5499 44.6089 39.5547 44.6108 39.5596 44.6128C39.5677 44.6161 39.5759 44.6194 39.5839 44.6213C39.6223 44.6319 39.6596 44.6371 39.6948 44.6371C39.73 44.6371 39.7669 44.6319 39.8052 44.6213C39.8132 44.6194 39.8213 44.6161 39.8294 44.6128L39.8295 44.6128L39.8295 44.6128C39.8343 44.6108 39.8392 44.6089 39.8439 44.6073L39.8479 44.6059C39.873 44.597 39.8986 44.588 39.9249 44.5752C39.9355 44.57 39.9462 44.5634 39.957 44.5567C39.9607 44.5544 39.9645 44.5521 39.9683 44.5498C39.9704 44.5485 39.9725 44.5473 39.9746 44.5461L39.9812 44.5422L39.9812 44.5422L39.9813 44.5421C40.0046 44.5285 40.0278 44.515 40.0516 44.4977C40.0672 44.4869 40.083 44.474 40.0987 44.4612L40.1074 44.4541L40.113 44.4496L40.113 44.4496C40.1368 44.4304 40.1608 44.4109 40.1853 44.3885C40.2019 44.3736 40.2188 44.3566 40.2357 44.3396L40.2443 44.3309C40.2708 44.3046 40.2971 44.2773 40.3239 44.2473C40.3378 44.232 40.3517 44.2155 40.3657 44.1989L40.3851 44.176C40.4119 44.1435 40.4392 44.1092 40.4664 44.0731C40.4872 44.0458 40.5078 44.0177 40.5285 43.9882C40.5558 43.9495 40.5835 43.9085 40.6112 43.8663L40.6194 43.8535L40.6195 43.8534C40.6375 43.8255 40.6558 43.7971 40.6737 43.7673C40.7018 43.722 40.7295 43.6741 40.7572 43.6248L40.7685 43.6049L40.7685 43.6048C40.7854 43.575 40.8024 43.5451 40.8193 43.5135C40.8474 43.4607 40.876 43.4044 40.9042 43.3472L40.9186 43.3182C40.9336 43.288 40.9486 43.2579 40.9636 43.2262C40.9918 43.1666 41.0193 43.1033 41.0469 43.0399L41.0469 43.0398L41.0503 43.0322L41.0636 43.002L41.0637 43.0019C41.0779 42.9698 41.092 42.938 41.1061 42.9042C41.1369 42.8294 41.1672 42.7498 41.1976 42.6697L41.2135 42.6289C41.224 42.6023 41.2344 42.5758 41.2446 42.5478C41.286 42.4348 41.3261 42.3164 41.3656 42.1937L41.3702 42.1807L41.373 42.1727C41.3749 42.1675 41.3767 42.1622 41.3784 42.1567C41.4215 42.0208 41.4638 41.8787 41.5046 41.7313C41.5143 41.6975 41.5233 41.6619 41.5323 41.6265L41.546 41.5729ZM38.7709 33.992C38.5901 33.9749 38.4102 33.9524 38.2307 33.9252C38.2094 33.9219 38.1881 33.9189 38.1668 33.916C38.1337 33.9114 38.1006 33.9068 38.0676 33.9009C37.8634 33.8666 37.6601 33.8266 37.4587 33.7786C37.4493 33.8487 37.4415 33.9198 37.4336 33.991L37.4336 33.9911L37.4336 33.9912L37.4336 33.9914C37.4284 34.0377 37.4233 34.0841 37.4178 34.1302L37.403 34.255L37.403 34.2551L37.403 34.2551C37.389 34.3721 37.375 34.4894 37.3637 34.6088C37.3552 34.6982 37.3491 34.7892 37.3429 34.8802C37.3401 34.9222 37.3372 34.9642 37.3342 35.006L37.325 35.125C37.3158 35.2443 37.3065 35.3635 37.3003 35.4847L37.2998 35.4952L37.2994 35.5075C37.2992 35.5156 37.299 35.5238 37.2985 35.5317H42.0915L42.0903 35.4891C42.0832 35.3567 42.0731 35.2267 42.0631 35.0967L42.0631 35.0964L42.0542 34.9809C42.0511 34.9392 42.0482 34.8972 42.0454 34.8551L42.0453 34.8549C42.0397 34.7726 42.0341 34.69 42.0265 34.6088C42.0138 34.4741 41.9978 34.3422 41.9817 34.2105L41.9817 34.2104L41.9697 34.1112C41.9648 34.07 41.9602 34.0285 41.9557 33.987L41.9557 33.987C41.9481 33.917 41.9404 33.8471 41.9311 33.7786C41.7304 33.8262 41.5276 33.8662 41.3243 33.9005C41.2911 33.9062 41.2577 33.9108 41.2243 33.9154L41.2243 33.9154C41.2006 33.9186 41.1769 33.9219 41.1532 33.9256C40.9764 33.9524 40.7987 33.9749 40.6209 33.9915C40.543 33.999 40.4651 34.0065 40.3868 34.0122C40.1819 34.0267 39.9764 34.036 39.7709 34.0373C39.7592 34.0375 39.7476 34.0381 39.736 34.0388L39.736 34.0388C39.7223 34.0396 39.7086 34.0404 39.6948 34.0404C39.6808 34.0404 39.667 34.0396 39.6531 34.0388H39.653C39.6412 34.0381 39.6293 34.0375 39.6173 34.0373C39.4119 34.0356 39.2065 34.0267 39.0019 34.0122C38.9244 34.0065 38.8479 33.9994 38.7709 33.992ZM40.5473 39.0385C40.7942 39.0605 41.0396 39.0904 41.2838 39.1309C41.2957 39.1331 41.308 39.1344 41.3198 39.1362C41.5389 39.1736 41.7575 39.2162 41.974 39.2686C41.9769 39.2454 41.979 39.2217 41.9811 39.198L41.9811 39.198L41.9811 39.1979C41.9828 39.1784 41.9846 39.1589 41.9867 39.1396C42.0175 38.8673 42.043 38.592 42.0632 38.313C42.0694 38.2284 42.074 38.1431 42.0786 38.0577L42.0826 37.9835C42.0954 37.7561 42.1055 37.5273 42.1112 37.2963C42.113 37.2339 42.1138 37.1714 42.1147 37.1085H37.275C37.2759 37.1714 37.2768 37.2344 37.2786 37.2973C37.2847 37.5273 37.2944 37.7557 37.3072 37.9822L37.3134 38.0933C37.3176 38.1683 37.3217 38.2431 37.327 38.317C37.3463 38.5884 37.3718 38.8559 37.4013 39.1208C37.4036 39.1421 37.4056 39.1639 37.4075 39.1856L37.4075 39.1856L37.4076 39.1857C37.4101 39.2135 37.4126 39.2414 37.4158 39.2686C37.6318 39.2162 37.8496 39.174 38.0683 39.1366C38.081 39.1344 38.0937 39.1326 38.1069 39.1309C38.3502 39.0904 38.5948 39.0604 38.8412 39.0385L38.9169 39.0319C39.1751 39.0112 39.4343 38.9967 39.6947 38.9967C39.9547 38.9967 40.2138 39.0112 40.4721 39.0319C40.4886 39.033 40.5052 39.0346 40.5217 39.0361L40.5473 39.0385ZM35.6981 37.2027C35.6963 37.1715 35.6945 37.1403 35.694 37.1085V37.1085H31.5977C31.7121 38.6922 32.2849 40.1968 33.2496 41.4528C33.264 41.44 33.2791 41.4282 33.2942 41.4163C33.3072 41.4061 33.3202 41.3959 33.3328 41.3851C33.4744 41.2615 33.62 41.1422 33.7687 41.0274C33.7863 41.0138 33.8037 40.9999 33.8211 40.986L33.8212 40.986L33.8213 40.9859C33.8433 40.9683 33.8654 40.9506 33.888 40.9337C34.0758 40.793 34.269 40.6592 34.4669 40.5325C34.4921 40.5163 34.5178 40.5009 34.5435 40.4855C34.5646 40.4728 34.5856 40.4602 34.6064 40.4472C34.7635 40.3504 34.9232 40.2576 35.0855 40.1696C35.148 40.1358 35.2101 40.1023 35.273 40.0701C35.4445 39.9817 35.6187 39.899 35.7951 39.8212C35.8112 39.8141 35.8269 39.8063 35.8426 39.7984C35.8581 39.7906 35.8737 39.7829 35.8897 39.7759C35.8874 39.7583 35.8858 39.7402 35.8842 39.7222C35.8828 39.7068 35.8814 39.6914 35.8796 39.6764C35.8304 39.2955 35.7894 38.9092 35.7595 38.5154C35.7567 38.4784 35.7547 38.441 35.7528 38.4037L35.7528 38.4036L35.7528 38.4035C35.7511 38.3716 35.7494 38.3398 35.7472 38.3082C35.7248 37.9717 35.7098 37.6312 35.7019 37.2867C35.7013 37.2584 35.6997 37.2306 35.6981 37.2027ZM34.3549 42.5849L34.3285 42.6085C35.1644 43.3498 36.1265 43.9006 37.1668 44.2393C37.1607 44.2277 37.1548 44.2149 37.1489 44.202L37.1489 44.202C37.1438 44.1909 37.1387 44.1797 37.1334 44.1694C37.0573 44.0233 36.9838 43.8702 36.913 43.7101C36.8875 43.652 36.8624 43.5931 36.8373 43.5337C36.7735 43.3806 36.7119 43.2218 36.653 43.0568C36.6458 43.0371 36.6385 43.0178 36.6312 42.9986C36.6201 42.9692 36.609 42.9398 36.5984 42.909C36.5245 42.6943 36.4546 42.4704 36.3886 42.2368C36.3803 42.2076 36.3725 42.1776 36.3648 42.1477C36.3592 42.1265 36.3538 42.1053 36.3481 42.0846C36.2958 41.8919 36.2461 41.6935 36.1994 41.4893C36.1953 41.4711 36.1908 41.4537 36.1863 41.4364C36.1816 41.4182 36.1768 41.4 36.1726 41.3807C36.1689 41.3825 36.1652 41.3841 36.1615 41.3857C36.1571 41.3876 36.1529 41.3895 36.1488 41.3917C35.9913 41.4682 35.8365 41.5492 35.6843 41.6358C35.6797 41.6384 35.6753 41.6411 35.6708 41.6439C35.6671 41.6462 35.6634 41.6485 35.6597 41.6508L35.6491 41.6573L35.635 41.6658C35.5004 41.7441 35.3675 41.8255 35.2373 41.9112C35.2047 41.9326 35.173 41.9551 35.1413 41.9776C35.1247 41.9894 35.1081 42.0012 35.0913 42.0129C34.9954 42.0789 34.8999 42.1458 34.8071 42.2157C34.769 42.2444 34.7317 42.2743 34.6944 42.3041L34.6487 42.3407C34.5634 42.4084 34.4785 42.4774 34.3958 42.5487C34.382 42.5606 34.3685 42.5727 34.3551 42.5847L34.3549 42.5849ZM42.4751 43.711C42.4047 43.8693 42.3322 44.0207 42.2574 44.165C42.2516 44.1761 42.2462 44.188 42.2407 44.2C42.2344 44.2137 42.2281 44.2274 42.2213 44.2399C43.2622 43.9007 44.2249 43.3499 45.0611 42.6087L45.0323 42.5829C45.0188 42.5707 45.0053 42.5585 44.9917 42.5467C44.9107 42.4772 44.8276 42.4094 44.744 42.343L44.7148 42.3197C44.6705 42.2843 44.6263 42.2489 44.5811 42.215C44.4897 42.1454 44.3955 42.0799 44.3013 42.0148C44.2805 42.0005 44.26 41.986 44.2394 41.9715C44.2104 41.951 44.1814 41.9305 44.1518 41.911C44.0242 41.8269 43.8935 41.7468 43.7616 41.6703L43.7399 41.6568C43.7283 41.6496 43.7167 41.6423 43.7047 41.6355C43.553 41.5493 43.3981 41.4679 43.2416 41.3918C43.2336 41.3879 43.2257 41.3848 43.2178 41.3808C43.2131 41.4016 43.208 41.4212 43.2028 41.4407C43.1976 41.4605 43.1925 41.4801 43.1878 41.5009C43.1429 41.6958 43.0949 41.8849 43.0453 42.0693C43.0391 42.0921 43.0331 42.1152 43.0271 42.1383L43.027 42.1387C43.0179 42.1733 43.0089 42.2078 42.9995 42.2413C42.934 42.4723 42.8645 42.6944 42.7909 42.9073C42.7804 42.9374 42.7696 42.9663 42.7589 42.9952L42.7586 42.9958C42.7553 43.0048 42.7519 43.0138 42.7486 43.0229C42.7439 43.0355 42.7393 43.0481 42.7347 43.0609C42.6757 43.224 42.6145 43.3811 42.5516 43.5329L42.5372 43.5668C42.5166 43.6153 42.4961 43.6635 42.4751 43.711ZM46.0961 41.417C46.1109 41.4287 46.1256 41.4403 46.1397 41.4528C47.105 40.1955 47.6782 38.6914 47.7925 37.1086H43.6963C43.6957 37.1395 43.694 37.1698 43.6923 37.2001C43.6907 37.2291 43.6891 37.2581 43.6884 37.2876C43.6801 37.629 43.6651 37.9673 43.6427 38.3016C43.641 38.3293 43.6396 38.3571 43.6381 38.3849L43.6381 38.3854L43.6381 38.3855C43.6359 38.4287 43.6336 38.4719 43.6304 38.5146C43.6005 38.9074 43.56 39.2937 43.5107 39.6746C43.5094 39.6844 43.5084 39.6943 43.5074 39.7042C43.5068 39.7108 43.5062 39.7174 43.5056 39.724L43.5056 39.7241C43.504 39.7415 43.5024 39.7589 43.5001 39.7758C43.5184 39.7835 43.536 39.7923 43.5535 39.8011L43.5536 39.8012L43.5536 39.8012C43.5691 39.809 43.5846 39.8167 43.6005 39.8237C43.7743 39.9003 43.9458 39.9821 44.1152 40.0692C44.179 40.1018 44.2423 40.1357 44.3052 40.17C44.4667 40.2575 44.6251 40.3494 44.7813 40.4463C44.7993 40.4573 44.8175 40.4682 44.8357 40.479C44.865 40.4965 44.8944 40.514 44.9229 40.5325C45.1204 40.6592 45.3131 40.7925 45.5006 40.9328C45.5222 40.9492 45.5434 40.9661 45.5646 40.9831L45.5647 40.9832L45.5647 40.9833C45.584 40.9987 45.6032 41.0141 45.6229 41.0292C45.7702 41.1431 45.9145 41.261 46.0553 41.3838C46.0685 41.3952 46.0822 41.4061 46.096 41.417L46.0961 41.417L46.0961 41.417ZM43.6678 35.4756C43.6693 35.4942 43.6709 35.5127 43.6717 35.5318H47.7543C47.5792 34.095 47.024 32.736 46.1397 31.5843C46.1245 31.5979 46.1083 31.6107 46.0922 31.6234L46.0921 31.6234L46.0921 31.6234C46.078 31.6345 46.064 31.6456 46.0505 31.6573C45.9097 31.7796 45.7649 31.8979 45.6172 32.0119C45.6004 32.0249 45.5838 32.0381 45.5673 32.0514C45.5404 32.0729 45.5135 32.0944 45.486 32.1148C45.2955 32.2569 45.0997 32.392 44.8995 32.52C44.8721 32.5373 44.8443 32.5538 44.8166 32.5702L44.8164 32.5703C44.7976 32.5815 44.7788 32.5927 44.7601 32.6041C44.5995 32.7026 44.4372 32.7963 44.2713 32.8856C44.2071 32.92 44.1429 32.9538 44.0782 32.9868C43.9063 33.0739 43.732 33.1562 43.5557 33.2327C43.5398 33.2397 43.5244 33.2474 43.509 33.255C43.4907 33.2641 43.4724 33.2732 43.4536 33.2811C43.456 33.2971 43.4578 33.3135 43.4595 33.3299L43.4595 33.33L43.4595 33.3301C43.4609 33.3433 43.4623 33.3565 43.4641 33.3695C43.5125 33.6999 43.5551 34.0347 43.5882 34.3765C43.5895 34.3904 43.5905 34.4045 43.5915 34.4187C43.5924 34.4329 43.5934 34.4471 43.5947 34.461C43.6247 34.7764 43.6471 35.0967 43.6638 35.4205C43.6647 35.439 43.6662 35.4573 43.6678 35.4756ZM45.0259 30.4597L45.061 30.4286C44.1627 29.6323 43.1192 29.0564 41.9893 28.726C41.9971 28.7383 42.0044 28.7522 42.0117 28.766C42.018 28.7778 42.0242 28.7896 42.0307 28.8003C42.1217 28.9495 42.2107 29.1074 42.2955 29.2759C42.3014 29.2874 42.3073 29.2984 42.3132 29.3095L42.3133 29.3095L42.3133 29.3096L42.3133 29.3097L42.3133 29.3097C42.3208 29.3235 42.3282 29.3373 42.3355 29.352C42.4288 29.5425 42.5173 29.7471 42.6026 29.9609C42.6234 30.0128 42.6438 30.0665 42.6641 30.1202L42.6641 30.1202L42.6641 30.1203L42.6651 30.1228C42.7442 30.3322 42.8208 30.5486 42.8925 30.7783C42.8952 30.7869 42.898 30.795 42.9009 30.8031C42.9037 30.8112 42.9066 30.8194 42.9092 30.828C42.984 31.0717 43.0531 31.3304 43.1191 31.5966C43.123 31.6125 43.1273 31.6274 43.1316 31.6424L43.1316 31.6424L43.1316 31.6425C43.1361 31.658 43.1406 31.6735 43.1446 31.6903L43.1639 31.6815L43.1842 31.6722C43.3232 31.6058 43.4605 31.535 43.5956 31.4607C43.6059 31.4549 43.6165 31.4495 43.6271 31.4441C43.6392 31.4379 43.6512 31.4318 43.6629 31.4251C43.8196 31.3371 43.9731 31.2434 44.1235 31.1448C44.1502 31.1275 44.1762 31.1092 44.2023 31.0909L44.2024 31.0909C44.2206 31.0781 44.2388 31.0653 44.2573 31.0529C44.3615 30.9816 44.4649 30.9099 44.5656 30.8342C44.6043 30.8052 44.6421 30.7751 44.6799 30.745L44.7266 30.708C44.8147 30.638 44.9018 30.5672 44.9871 30.4941C45 30.4828 45.013 30.4713 45.0259 30.4597ZM37.0921 29.2795C37.1784 29.1088 37.2677 28.9491 37.3601 28.7982C37.367 28.7868 37.3736 28.7744 37.3801 28.762L37.3801 28.762L37.3801 28.762L37.3801 28.762C37.3867 28.7494 37.3933 28.7369 37.4004 28.7256C36.2707 29.056 35.2267 29.6323 34.3284 30.4286C34.3387 30.4377 34.3491 30.4469 34.3594 30.4561C34.3735 30.4688 34.3876 30.4814 34.4018 30.4937C34.4876 30.5671 34.5751 30.6384 34.6636 30.7083L34.699 30.7365L34.699 30.7366L34.6991 30.7366C34.7402 30.7695 34.7813 30.8022 34.8237 30.8337C34.9245 30.9094 35.0274 30.9815 35.1317 31.0524C35.1485 31.0639 35.1652 31.0756 35.1818 31.0874L35.1818 31.0874C35.2096 31.1069 35.2373 31.1265 35.2659 31.1452C35.4164 31.2433 35.5694 31.337 35.7256 31.4245C35.7385 31.4319 35.7518 31.4387 35.765 31.4454C35.7762 31.4511 35.7873 31.4568 35.7982 31.4628C35.932 31.5363 36.0675 31.6067 36.2047 31.6722L36.2245 31.6812L36.2443 31.6903C36.2481 31.6744 36.2524 31.6596 36.2566 31.6449L36.2567 31.6449L36.2567 31.6448L36.2567 31.6448C36.2608 31.6306 36.2648 31.6165 36.2685 31.6014C36.3354 31.3326 36.4054 31.0713 36.481 30.8249L36.4823 30.8209L36.4872 30.8069C36.4893 30.8009 36.4913 30.795 36.4933 30.7889C36.5664 30.554 36.6447 30.3327 36.7261 30.1193C36.7459 30.0665 36.7657 30.0142 36.7859 29.9631C36.8722 29.748 36.961 29.5421 37.0552 29.3503C37.0614 29.3374 37.068 29.3252 37.0745 29.313C37.0805 29.302 37.0865 29.291 37.0921 29.2795ZM33.2964 31.6224C33.2806 31.61 33.2648 31.5977 33.2498 31.5843C32.3659 32.7352 31.8112 34.0941 31.6366 35.5319H35.7183C35.7189 35.5191 35.72 35.5065 35.7211 35.4939L35.7211 35.4939C35.7222 35.4809 35.7233 35.468 35.724 35.4549C35.742 35.0994 35.7662 34.7479 35.7992 34.4021C35.8011 34.3821 35.8036 34.3625 35.806 34.3429L35.806 34.3428C35.8084 34.3233 35.8108 34.3037 35.8128 34.2838C35.8436 33.9793 35.8806 33.6793 35.9232 33.3841C35.9254 33.3686 35.9272 33.3528 35.9289 33.3371L35.9289 33.337C35.931 33.3182 35.9331 33.2995 35.936 33.2811C35.9155 33.2727 35.8958 33.2629 35.8761 33.2532C35.8609 33.2457 35.8458 33.2383 35.8304 33.2314C35.6553 33.1553 35.4833 33.0743 35.313 32.9877C35.2466 32.9542 35.1811 32.9195 35.1155 32.8843C34.9518 32.7963 34.7913 32.7034 34.6333 32.6062C34.6131 32.5938 34.5926 32.5817 34.5722 32.5697L34.5721 32.5696C34.5441 32.5531 34.516 32.5366 34.4886 32.5191C34.2889 32.3915 34.094 32.2569 33.9039 32.1152C33.8773 32.0954 33.8513 32.0746 33.8253 32.0539C33.8074 32.0396 33.7896 32.0254 33.7715 32.0115C33.6237 31.8971 33.4785 31.7787 33.3373 31.6556C33.324 31.6441 33.3102 31.6333 33.2964 31.6225L33.2964 31.6225L33.2964 31.6224ZM47.5254 48.8212H31.9083C31.4727 48.8212 31.1199 49.1745 31.1199 49.6096C31.1199 50.0451 31.4727 50.398 31.9083 50.398H47.5254C47.961 50.398 48.3139 50.0451 48.3139 49.6096C48.3138 49.1745 47.961 48.8212 47.5254 48.8212ZM35.4573 52.6962H43.9762C44.4117 52.6962 44.7645 53.0494 44.7645 53.4845C44.7645 53.9201 44.4117 54.2729 43.9762 54.2729H35.4573C35.0222 54.2729 34.6689 53.9201 34.6689 53.4845C34.6689 53.0494 35.0222 52.6962 35.4573 52.6962Z" fill="#00D231"></path>
+                        </svg>
+                    </td>
+                    <td>
+                        <h4>Identification</h4>
+                        <p>A passport or other form of identification. <a href="#" target="_blank">Will I need my passport to pick up a car?</a></p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="col3">
+            <table>
+                <tr>
+                    <td>
+                        <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="40" cy="40" r="40" fill="#D9FFEE"></circle>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M22 32C22 29.7909 23.7909 28 26 28H54C56.2091 28 58 29.7909 58 32V34H22V32ZM22 38H58V48C58 50.2091 56.2091 52 54 52H26C23.7909 52 22 50.2091 22 48V38ZM34 41H26V43H34V41Z" fill="#00D231"></path>
+                        </svg>
+                    </td>
+                    <td>
+                        <h4>Credit Card</h4>
+                        <p>A credit card in the name of the main driver with sufficient funds. <a href="#" target="_blank">Can I rent a car if I do not have a credit card?</a></p> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="40" cy="40" r="40" fill="#D9FFEE"></circle>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M48.2504 22H31.9069C29.7499 22 28 23.7494 28 25.9069V54.0931C28 56.251 29.7494 58 31.9069 58H48.2504C50.4074 58 52.1564 56.251 52.1564 54.0931V25.9069C52.1564 23.749 50.4079 22 48.2504 22ZM40.0786 54.4691C38.8729 54.4691 37.8958 53.492 37.8958 52.2863C37.8958 51.0815 38.8729 50.1044 40.0786 50.1044C41.2835 50.1044 42.2596 51.0815 42.2596 52.2863C42.2596 53.492 41.2835 54.4691 40.0786 54.4691ZM31.3727 47.9446H48.7832V25.5779H31.3727V47.9446Z" fill="#00D231"></path>
+                        </svg>
+                    </td>
+                    <td>
+                        <h4>Voucher</h4>
+                            <p>A printed Voucher or an e-Voucher where available. <a href="#" target="_blank">Where can I find my Voucher?</a></p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!--Blogger Section-->
+
+    <div class="b_head">
+        <h2>Latest Articles</h2>
+        <span class="bbig">Latest Article</span>
+    </div>
+    <div class="b_article">
+        <div class="square">
+            <img src="img/11.jpg" class="mask">
+            <div class="h1">Driving Tips for Beginners</div>
+            <p>New drivers can be under confident when driving their vehicles. A few tips and rules one need to follow when a beginner is. It takes no longer than a second or a blink of an eye for accidents.</p>
+            <div><a href="#" target="_" class="button">Read More</a></div>
+        </div>
+        <div class="square">
+            <img src="img/22.jpg" class="mask">
+            <div class="h1">Check When Renting a Car</div>
+            <p>Most of us rent cars whenever we are going out. But we also make the mistake of not checking the vehicle when we receive it. This causes more problems, especially in case of long rides.</p>
+            <div><a href="#" target="_" class="button">Read More</a></div>
+        </div>
+        <div class="square">
+            <img src="img/33.png" class="mask">
+            <div class="h1">Safe Driving While Pregnant</div>
+            <p>It is good to be active when pregnant. However, if you wish to drive during your pregnancy, it is best to consult your Doctor for safety precautions.</p>
+            <div><a href="#" target="_" class="button">Read More</a></div>
+        </div>
+    </div>
+
+    <!--News letter-->
+    <form action="newsletter.php" method="post">
+    <div class="s_main">
+        <div class="cent">
+            <h2>Let's keep in touch</h2>
+            <p>Subscribe to keep up with fresh news and exciting updates. We promise not to spam you!</p>
+            <div class="form">
+                <input type="email" class="formemail" placeholder="Enter your email address" name="email"/>
+                <button type="submit" class="formbutton">Send</button>
+            </div>
+            <div class="notice">
+                <input type="checkbox" required>
+                <span>I agree to my email address being stored and uses to recieve monthly newsletter.</span>
+            </div>
+        </div>
+    </div>
+    </form>
+    <!--Footer-->
+    <div class="footer_main">
+        <div class="footer_tabs">
+            <div class="fabout">
+                <h2>About us</h2>
+                <img src="img/logo.png">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis harum sint vero delectus culpa! Debitis necessitatibus veniam, facilis enim illum architecto dolorem et, incidunt, non labore laborum aut sint! Iure.</p>
+                <ul>
+                    <a href="">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="">
+                        <i class="fab fa-instagram"></i>
+                    </a>    
+                </ul>
+            </div>
+            <div class="fquicklink">
+                <h2>Quick Links</h2>
+                <div class="main_list">
+                <div class="list_i">
+                    <ul>
+                        <a href="aboutus.html">About Us<li></li></a>
+                        <a href="account.html">Account<li></li></a>
+                        <a href="support.html">Support<li></li></a>
+                        <a href="bookup.html">View Booking<li></li></a>
+                        <a href="offer.html">Offers<li></li></a>
+                        <a href="vehicle.html">Vehicles<li></li></a>
+                    </ul>
+                </div>
+                <div class="list_ii">
+                    <ul>
+                        <a href="login.html">Sign In<li></li></a>
+                        <a href="signup.html">Sign Up<li></li></a>
+                        <a href="offer.html">Offers<li></li></a>
+                        <a href="#">Get a Receipt<li></li></a>
+                        <a href="#">Community<li></li></a>
+                    </ul>                    
+                </div>
+                </div>
+            </div>
+            <div class="fcontact">
+                <h2>Contact Us</h2>
+                <div class="mail">
+                    <svg class="lnr lnr-phone-handset"><use xlink:href="#lnr-phone-handset"></use></svg>
+                    <p>(123)-456-7890<br>(123)-456-7890</p>
+                </div>
+                <div class="phone">
+                    <svg class="lnr lnr-envelope"><use xlink:href="#lnr-envelope"></use></svg>
+                    <p>info@rideplace.com<br>support@rideplace.com</p>
+                </div>
+                <div class="location">
+                    <svg class="lnr lnr-map-marker"><use xlink:href="#lnr-map-marker"></use></svg>
+                    <p>123 Negambo Road<br>Kurunegala - Sri Lanka</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <footer>
+            <div class="fpara">
+            <p>Copyright © RentNow 2022. All rights reserved.</p>
+            </div>
+            <div class="fpay">
+                <p><i>We Accept</i></p>
+                <img src="img/payments.png">
+            </div>
+        </footer>
+        <hr>
+    </div>
+
+</body>
+</html>

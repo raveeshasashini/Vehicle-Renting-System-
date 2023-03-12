@@ -1,0 +1,66 @@
+table{
+    border: 1px solid black;
+    border-radius: 1px;
+}
+th {
+	background: #C0C0C0;
+}
+
+td{
+	background: white;
+}
+
+
+th,td {
+	padding: 12px;
+}
+
+table.center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.ptable {
+	padding-top: 10px;
+	font-family: "Open Sans", sans-serif;
+	font-size: 18px;
+	
+
+}
+
+.pthead {
+	color: white;
+	text-align: center;
+	font-family: "Raleway",sans-serif;
+	font-size: 31px;
+
+}
+
+
+.ptp {
+	color: red;
+	text-align: center;
+	font-family: "Open Sans", sans-serif;
+	font-size: 38px;
+	font-weight: 500;
+}
+
+
+.ptf {
+	color: #112E3B;
+	text-align: center;
+	font-family: "Open Sans", sans-serif;
+	font-size: 38px;
+	padding-top: 20px;
+	font-weight: 600;
+}
+
+.note{
+	color: red;
+	text-align: left;
+	font-family: "Open Sans", sans-serif;
+	font-size: 13px;
+	padding-top: 20px;
+	padding-left: 70px;
+}

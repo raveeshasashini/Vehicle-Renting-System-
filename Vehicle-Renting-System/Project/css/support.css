@@ -1,0 +1,105 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.maintext{
+    margin: auto;
+    width: 70%;
+    margin-top: 90px;
+    margin-bottom: 90px;
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+}
+
+.formbox {
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width:35%;
+    margin: auto;
+    font-family: "Raleway", sans-serif;
+    margin-top: 50px;
+    margin-bottom: 70px;
+
+  }
+
+.svg-container{
+  width: 70%;
+  margin: auto;
+}
+
+  .modal {
+    display: none; 
+    position: absolute; 
+    right: 1%;
+    top: 8%;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    font-family: "Raleway", sans-serif;
+
+  }
+
+
+  .formbox input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  .formbox input[type=button] {
+    background-color: #00D231;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .formbox input[type=button]:hover {
+    background-color: #45a049;
+  }
+
+  
+@supports (animation: grow .5s cubic-bezier(.25, .25, .25, 1) forwards) {
+  .tick {
+     stroke-opacity: 0;
+     stroke-dasharray: 29px;
+     stroke-dashoffset: 29px;
+     animation: draw .5s cubic-bezier(.25, .25, .25, 1) forwards;
+     animation-delay: .6s
+ }
+
+ .circle {
+     fill-opacity: 0;
+     stroke: #219a00;
+     stroke-width: 16px;
+     transform-origin: center;
+     transform: scale(0);
+     animation: grow 1s cubic-bezier(.25, .25, .25, 1.25) forwards;   
+ }   
+}
+
+@keyframes grow {
+ 60% {
+     transform: scale(.8);
+     stroke-width: 4px;
+     fill-opacity: 0;
+ }
+ 100% {
+     transform: scale(.9);
+     stroke-width: 8px;
+     fill-opacity: 1;
+     fill: #219a00;
+ }
+}
+
+@keyframes draw {
+ 0%, 100% { stroke-opacity: 1; }
+ 100% { stroke-dashoffset: 0; }
+}

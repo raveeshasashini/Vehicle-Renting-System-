@@ -1,0 +1,75 @@
+/* How its Works */
+
+.how_head{
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 90px;
+    padding-bottom: 30px;
+}
+
+.how_head h2{
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-size: 31px;
+    color: black;
+}
+
+.how_head .hbig{
+    display: block;
+    width: 68%;
+    font-weight: 800;
+    font-size: 50px;
+    font-size: 4.28571rem;
+    line-height: 1;
+    letter-spacing: -3px;
+    position: absolute;
+    text-align: center;
+    z-index: -1;
+    color: rgba(211, 220, 225, 0.4);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-85%)
+}
+
+.main_need{
+    background-color: #F7FFF6;
+    display: flex;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    width: 70%;
+    margin: 0 auto;
+    padding: 50px 0px 80px;
+    border-radius: 10px;
+}
+.main_need a{
+    text-decoration: none;
+    color: #00D231;
+}
+.main_need table h4{
+    padding-bottom: 10px;
+}
+
+.main_need table td{
+    padding-bottom: 20px;
+}
+.main_need table td{
+    padding-left: 20px;
+}
+.main_need .col1{
+    font-family: "Raleway", sans-serif;
+    width: 30%;
+}
+
+.main_need .col1 h2{
+    padding-left: 24px;
+}
+
+.main_need .col2{
+    width: 33%;
+}
+.main_need .col3{
+    width: 33%;
+}

@@ -1,0 +1,169 @@
+/* Vehicle Category */
+
+@import url('https://fonts.googleapis.com/css?family=poppins:200,300,400,500,600,700,800,900&display=swap');
+
+.c_head{
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 90px;
+    padding-bottom: 30px;
+}
+
+.c_head h2{
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-size: 31px;
+    color: black;
+}
+
+.c_head .vbig{
+    display: block;
+    width: 68%;
+    font-weight: 800;
+    font-size: 50px;
+    font-size: 4.28571rem;
+    line-height: 1;
+    letter-spacing: -3px;
+    position: absolute;
+    text-align: center;
+    z-index: -1;
+    color: rgba(211, 220, 225, 0.4);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-85%)
+}
+
+.category{
+    padding-top: 50px;
+    padding-bottom: 70px;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px auto;
+    background-color: #F7FFF6;
+    border-radius: 15px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+}
+.category ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.category ul li{
+    list-style: none;
+    background: transparent;
+    padding: 12px 20px;
+    margin: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.lab{
+    text-align: center;
+}
+.category ul li.active{
+    background: #D9FFEE;
+    color: #00D231;
+    border-radius: 15px;
+}
+.product{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-wrap: wrap;
+}
+.product .itemBox{
+    position: relative;
+    width: 300px;
+    margin: 5px;
+    display: block;
+}
+.product .itemBox.hide{
+    display: none;
+}
+
+.product .itemBox .carname{
+    background-color: #D9FFEE;
+    border-radius: 15px;
+}
+
+.product .itemBox .carname .offer-action{
+        text-align: center;
+        background: #00D231 none repeat scroll 0 0;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        width: 100%;
+        margin: 0px auto 0;
+        -webkit-transition: all 0.4s ease 0s;
+        transition: all 0.4s ease 0s;
+        border-radius: 0px 0px 10px 10px;
+        box-shadow: 0 4px 15px rgb(251,167,7,0.7);
+}
+
+.product .itemBox .carname .offer-action:after {
+    position: absolute;
+    content: "";
+    width: 66%;
+    height: 100%;
+    background: #FBA707 none repeat scroll 0 0;
+    right: -36px;
+    z-index: -1;
+    -webkit-transform: skewX(40deg);
+    transform: skewX(40deg);
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    border-radius: 550px 150px 50px 50px;
+}
+
+.product .itemBox .carname .offer-action a{
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 7px 15px;
+    font-weight: 500;
+    color: #fff;
+    font-size: 14px;
+    width: 37%;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+}
+
+
+.product .itemBox .carname img{
+    padding: 5px 15px 5px;
+}
+
+.product .itemBox .carname h3{
+    padding: 5px 15px 5px;
+}
+
+.product .itemBox .carname p{
+    padding: 5px 15px 5px;
+}
+
+.product .itemBox .carname h2{
+    padding: 5px 15px 5px;
+}
+
+.product .itemBox .carname img{
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.product .itemBox .carname .greenbox{
+    color:#fff;
+    background-color: #00D231;
+}
+
+
